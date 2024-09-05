@@ -25,6 +25,8 @@
 		4328730C2C8A34EB00E73EF9 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4328730B2C8A34EB00E73EF9 /* HomeViewController.swift */; };
 		4328730F2C8A386500E73EF9 /* SpotlightCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4328730E2C8A386500E73EF9 /* SpotlightCollectionView.swift */; };
 		432873112C8A432500E73EF9 /* SpotlightCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 432873102C8A432500E73EF9 /* SpotlightCollectionViewCell.swift */; };
+		432873162C8A451B00E73EF9 /* StoreRemoteImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 432873152C8A451B00E73EF9 /* StoreRemoteImage.swift */; };
+		432873182C8A47A800E73EF9 /* StoreNetworkRequestBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 432873172C8A47A800E73EF9 /* StoreNetworkRequestBuilder.swift */; };
 		4334A3642C89E860005FE4E7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4334A3632C89E860005FE4E7 /* Assets.xcassets */; };
 		4334A36F2C89EB0A005FE4E7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4334A36E2C89EB0A005FE4E7 /* AppDelegate.swift */; };
 		4334A3772C89EE53005FE4E7 /* .swiftlint.yml in Resources */ = {isa = PBXBuildFile; fileRef = 4334A3762C89EE53005FE4E7 /* .swiftlint.yml */; };
@@ -60,6 +62,8 @@
 		4328730B2C8A34EB00E73EF9 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		4328730E2C8A386500E73EF9 /* SpotlightCollectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpotlightCollectionView.swift; sourceTree = "<group>"; };
 		432873102C8A432500E73EF9 /* SpotlightCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpotlightCollectionViewCell.swift; sourceTree = "<group>"; };
+		432873152C8A451B00E73EF9 /* StoreRemoteImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoreRemoteImage.swift; sourceTree = "<group>"; };
+		432873172C8A47A800E73EF9 /* StoreNetworkRequestBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoreNetworkRequestBuilder.swift; sourceTree = "<group>"; };
 		4334A35C2C89E85F005FE4E7 /* DigioStore.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DigioStore.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4334A3632C89E860005FE4E7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4334A3652C89E860005FE4E7 /* DigioStore.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = DigioStore.entitlements; sourceTree = "<group>"; };
@@ -121,6 +125,8 @@
 				432872E32C8A006C00E73EF9 /* StoreEndpoint.swift */,
 				432872E52C8A00AA00E73EF9 /* StoreHTTPMethod.swift */,
 				432872E72C8A018200E73EF9 /* StoreNetworkService.swift */,
+				432873152C8A451B00E73EF9 /* StoreRemoteImage.swift */,
+				432873172C8A47A800E73EF9 /* StoreNetworkRequestBuilder.swift */,
 			);
 			path = Network;
 			sourceTree = "<group>";
@@ -384,8 +390,10 @@
 				4328730C2C8A34EB00E73EF9 /* HomeViewController.swift in Sources */,
 				432872D72C89FB8600E73EF9 /* Product.swift in Sources */,
 				432872E62C8A00AA00E73EF9 /* StoreHTTPMethod.swift in Sources */,
+				432873162C8A451B00E73EF9 /* StoreRemoteImage.swift in Sources */,
 				432873112C8A432500E73EF9 /* SpotlightCollectionViewCell.swift in Sources */,
 				432872DB2C89FBE300E73EF9 /* Store.swift in Sources */,
+				432873182C8A47A800E73EF9 /* StoreNetworkRequestBuilder.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

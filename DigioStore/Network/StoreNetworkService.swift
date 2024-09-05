@@ -11,10 +11,9 @@ protocol StoreNetworkServiceProtocol {
     func request<T: Decodable>(
         _ endpoint: StoreEndpoint,
         completion: @escaping (Result<T, StoreError>) -> Void)
-    func buildRequest(_ endpoint: StoreEndpoint) -> URLRequest?
 }
 
-final class StoreNetworkService: StoreNetworkServiceProtocol {
+final class StoreNetworkService: StoreNetworkRequestBuilder, StoreNetworkServiceProtocol {
     func request<T: Decodable>(_ endpoint: StoreEndpoint, completion: @escaping (Result<T, StoreError>) -> Void) {
 
         guard let request = buildRequest(endpoint) else {
@@ -45,14 +44,5 @@ final class StoreNetworkService: StoreNetworkServiceProtocol {
         }
 
         task.resume()
-    }
-
-    func buildRequest(_ endpoint: StoreEndpoint) -> URLRequest? {
-        guard let url = endpoint.url else { return nil }
-        var request = URLRequest(url: url)
-        request.httpMethod = endpoint.method.rawValue
-        request.allHTTPHeaderFields = endpoint.headers
-        request.httpBody = endpoint.body
-        return request
     }
 }
