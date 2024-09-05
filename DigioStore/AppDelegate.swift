@@ -16,7 +16,11 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
         window = UIWindow(frame: UIScreen.main.bounds)
 
-        let initialViewController = UIViewController()
+        let initialViewController = HomeViewController(
+            viewModel: HomeViewModel(
+                service: StoreNetworkService()
+            )
+        )
 
         window?.rootViewController = initialViewController
         window?.makeKeyAndVisible()

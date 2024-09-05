@@ -3,4 +3,54 @@
    uuid = "567CB6C2-3B2D-4F15-A382-7FA234A9A6BB"
    type = "1"
    version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "836FE7D5-C5A9-4EA4-BFC5-9F93E3890C11"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "DigioStore/Scene/Home/SubView/SpotlightCollectionView.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "48"
+            endingLineNumber = "48"
+            landmarkName = "collectionView(_:didSelectItemAt:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "836FE7D5-C5A9-4EA4-BFC5-9F93E3890C11 - e10fc34620f3adcf"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "DigioStore.GenericCollectionViewCell.__deallocating_deinit"
+                  moduleName = "DigioStore"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/kilmer/Desktop/DigioStore/DigioStore/Scene/Home/SubView/SpotlightCollectionView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "16">
+               </Location>
+               <Location
+                  uuid = "836FE7D5-C5A9-4EA4-BFC5-9F93E3890C11 - b7deda9296ae9a21"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "DigioStore.SpotlightCollectionView.collectionView(_: __C.UICollectionView, didSelectItemAt: Foundation.IndexPath) -&gt; ()"
+                  moduleName = "DigioStore"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/kilmer/Desktop/DigioStore/DigioStore/Scene/Home/SubView/SpotlightCollectionView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "49"
+                  endingLineNumber = "49"
+                  offsetFromSymbolStart = "44">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
 </Bucket>
