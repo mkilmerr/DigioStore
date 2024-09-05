@@ -11,6 +11,10 @@
 		432872D72C89FB8600E73EF9 /* Product.swift in Sources */ = {isa = PBXBuildFile; fileRef = 432872D62C89FB8600E73EF9 /* Product.swift */; };
 		432872D92C89FBB100E73EF9 /* Cash.swift in Sources */ = {isa = PBXBuildFile; fileRef = 432872D82C89FBB100E73EF9 /* Cash.swift */; };
 		432872DB2C89FBE300E73EF9 /* Store.swift in Sources */ = {isa = PBXBuildFile; fileRef = 432872DA2C89FBE300E73EF9 /* Store.swift */; };
+		432872E02C89FEA700E73EF9 /* StoreError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 432872DF2C89FEA700E73EF9 /* StoreError.swift */; };
+		432872E42C8A006C00E73EF9 /* StoreEndpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 432872E32C8A006C00E73EF9 /* StoreEndpoint.swift */; };
+		432872E62C8A00AA00E73EF9 /* StoreHTTPMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = 432872E52C8A00AA00E73EF9 /* StoreHTTPMethod.swift */; };
+		432872E82C8A018200E73EF9 /* StoreNetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 432872E72C8A018200E73EF9 /* StoreNetworkService.swift */; };
 		4334A3642C89E860005FE4E7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4334A3632C89E860005FE4E7 /* Assets.xcassets */; };
 		4334A36F2C89EB0A005FE4E7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4334A36E2C89EB0A005FE4E7 /* AppDelegate.swift */; };
 		4334A3772C89EE53005FE4E7 /* .swiftlint.yml in Resources */ = {isa = PBXBuildFile; fileRef = 4334A3762C89EE53005FE4E7 /* .swiftlint.yml */; };
@@ -21,6 +25,10 @@
 		432872D62C89FB8600E73EF9 /* Product.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Product.swift; sourceTree = "<group>"; };
 		432872D82C89FBB100E73EF9 /* Cash.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cash.swift; sourceTree = "<group>"; };
 		432872DA2C89FBE300E73EF9 /* Store.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Store.swift; sourceTree = "<group>"; };
+		432872DF2C89FEA700E73EF9 /* StoreError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoreError.swift; sourceTree = "<group>"; };
+		432872E32C8A006C00E73EF9 /* StoreEndpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoreEndpoint.swift; sourceTree = "<group>"; };
+		432872E52C8A00AA00E73EF9 /* StoreHTTPMethod.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoreHTTPMethod.swift; sourceTree = "<group>"; };
+		432872E72C8A018200E73EF9 /* StoreNetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoreNetworkService.swift; sourceTree = "<group>"; };
 		4334A35C2C89E85F005FE4E7 /* DigioStore.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DigioStore.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4334A3632C89E860005FE4E7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4334A3652C89E860005FE4E7 /* DigioStore.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = DigioStore.entitlements; sourceTree = "<group>"; };
@@ -50,6 +58,32 @@
 			path = Model;
 			sourceTree = "<group>";
 		};
+		432872DC2C89FCB400E73EF9 /* Scene */ = {
+			isa = PBXGroup;
+			children = (
+				432872DD2C89FCDD00E73EF9 /* Home */,
+			);
+			path = Scene;
+			sourceTree = "<group>";
+		};
+		432872DD2C89FCDD00E73EF9 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		432872DE2C89FD2400E73EF9 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				432872DF2C89FEA700E73EF9 /* StoreError.swift */,
+				432872E32C8A006C00E73EF9 /* StoreEndpoint.swift */,
+				432872E52C8A00AA00E73EF9 /* StoreHTTPMethod.swift */,
+				432872E72C8A018200E73EF9 /* StoreNetworkService.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
 		4334A3532C89E85F005FE4E7 = {
 			isa = PBXGroup;
 			children = (
@@ -69,6 +103,8 @@
 		4334A35E2C89E85F005FE4E7 /* DigioStore */ = {
 			isa = PBXGroup;
 			children = (
+				432872DE2C89FD2400E73EF9 /* Network */,
+				432872DC2C89FCB400E73EF9 /* Scene */,
 				432872D32C89FB0100E73EF9 /* Model */,
 				4334A36E2C89EB0A005FE4E7 /* AppDelegate.swift */,
 				4334A3632C89E860005FE4E7 /* Assets.xcassets */,
@@ -174,9 +210,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				432872D92C89FBB100E73EF9 /* Cash.swift in Sources */,
+				432872E82C8A018200E73EF9 /* StoreNetworkService.swift in Sources */,
+				432872E02C89FEA700E73EF9 /* StoreError.swift in Sources */,
+				432872E42C8A006C00E73EF9 /* StoreEndpoint.swift in Sources */,
 				432872D52C89FB2100E73EF9 /* Spotlight.swift in Sources */,
 				4334A36F2C89EB0A005FE4E7 /* AppDelegate.swift in Sources */,
 				432872D72C89FB8600E73EF9 /* Product.swift in Sources */,
+				432872E62C8A00AA00E73EF9 /* StoreHTTPMethod.swift in Sources */,
 				432872DB2C89FBE300E73EF9 /* Store.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
