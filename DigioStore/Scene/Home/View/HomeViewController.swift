@@ -8,7 +8,7 @@
 import UIKit
 
 class HomeViewController: UIViewController {
-    private let spotlightCollectionView = SpotlightCollectionView()
+    private var spotlightCollectionView: SpotlightCollectionView = .make()
 
     let viewModel: HomeViewModelProtocol
 
@@ -24,14 +24,14 @@ class HomeViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        viewModel.getStore { state in
+        viewModel.getStore { [weak self] state in
+            guard let self else { return }
             switch state {
-            case .loading:
-                print("loading")
+            case .loading: break
             case .success(let store):
-                print("success \(store)")
+                spotlightCollectionView.loadView(with: store.spotlight)
             case .error(let error):
-                print("error \(error)")
+                spotlightCollectionView.loadView(with: [])
             }
         }
 

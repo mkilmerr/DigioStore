@@ -24,9 +24,9 @@ extension StoreEndpoint {
         )
     }
 
-    static func getRemoteImage() -> Self {
+    static func getRemoteImage(_ url: String) -> Self {
         .init(
-            url: URL(string: "https://s3-sa-east-1.amazonaws.com/digio-exame/recharge_banner.png"),
+            url: URL(string: url),
             method: .get,
             body: nil,
             headers: nil

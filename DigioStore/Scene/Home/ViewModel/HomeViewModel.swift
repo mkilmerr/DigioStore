@@ -26,12 +26,14 @@ final class HomeViewModel: HomeViewModelProtocol {
 
     func getStore(completion: @escaping (HomeViewModelState) -> Void) {
         service.request(.homeStore()) { (result: Result<Store, StoreError>) in
-            completion(.loading)
-            switch result {
-            case .success(let result):
-                completion(.success(result))
-            case .failure(let error):
-                completion(.error(error))
+            DispatchQueue.main.async {
+                completion(.loading)
+                switch result {
+                case .success(let result):
+                    completion(.success(result))
+                case .failure(let error):
+                    completion(.error(error))
+                }
             }
         }
     }

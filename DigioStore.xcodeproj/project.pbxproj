@@ -27,6 +27,8 @@
 		432873112C8A432500E73EF9 /* SpotlightCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 432873102C8A432500E73EF9 /* SpotlightCollectionViewCell.swift */; };
 		432873162C8A451B00E73EF9 /* StoreRemoteImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 432873152C8A451B00E73EF9 /* StoreRemoteImage.swift */; };
 		432873182C8A47A800E73EF9 /* StoreNetworkRequestBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 432873172C8A47A800E73EF9 /* StoreNetworkRequestBuilder.swift */; };
+		4328731C2C8A4A5D00E73EF9 /* SpotlightViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4328731B2C8A4A5D00E73EF9 /* SpotlightViewModel.swift */; };
+		4328731F2C8A550400E73EF9 /* SpotlightCollectionView+Factory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4328731E2C8A550400E73EF9 /* SpotlightCollectionView+Factory.swift */; };
 		4334A3642C89E860005FE4E7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4334A3632C89E860005FE4E7 /* Assets.xcassets */; };
 		4334A36F2C89EB0A005FE4E7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4334A36E2C89EB0A005FE4E7 /* AppDelegate.swift */; };
 		4334A3772C89EE53005FE4E7 /* .swiftlint.yml in Resources */ = {isa = PBXBuildFile; fileRef = 4334A3762C89EE53005FE4E7 /* .swiftlint.yml */; };
@@ -64,6 +66,8 @@
 		432873102C8A432500E73EF9 /* SpotlightCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpotlightCollectionViewCell.swift; sourceTree = "<group>"; };
 		432873152C8A451B00E73EF9 /* StoreRemoteImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoreRemoteImage.swift; sourceTree = "<group>"; };
 		432873172C8A47A800E73EF9 /* StoreNetworkRequestBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoreNetworkRequestBuilder.swift; sourceTree = "<group>"; };
+		4328731B2C8A4A5D00E73EF9 /* SpotlightViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpotlightViewModel.swift; sourceTree = "<group>"; };
+		4328731E2C8A550400E73EF9 /* SpotlightCollectionView+Factory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SpotlightCollectionView+Factory.swift"; sourceTree = "<group>"; };
 		4334A35C2C89E85F005FE4E7 /* DigioStore.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DigioStore.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4334A3632C89E860005FE4E7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4334A3652C89E860005FE4E7 /* DigioStore.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = DigioStore.entitlements; sourceTree = "<group>"; };
@@ -195,8 +199,9 @@
 		432873122C8A437300E73EF9 /* Spotlight */ = {
 			isa = PBXGroup;
 			children = (
-				4328730E2C8A386500E73EF9 /* SpotlightCollectionView.swift */,
-				432873102C8A432500E73EF9 /* SpotlightCollectionViewCell.swift */,
+				4328731D2C8A54F400E73EF9 /* Factory */,
+				4328731A2C8A4A4400E73EF9 /* ViewModel */,
+				432873192C8A4A3B00E73EF9 /* View */,
 			);
 			path = Spotlight;
 			sourceTree = "<group>";
@@ -207,6 +212,31 @@
 				4328730B2C8A34EB00E73EF9 /* HomeViewController.swift */,
 			);
 			path = View;
+			sourceTree = "<group>";
+		};
+		432873192C8A4A3B00E73EF9 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				4328730E2C8A386500E73EF9 /* SpotlightCollectionView.swift */,
+				432873102C8A432500E73EF9 /* SpotlightCollectionViewCell.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		4328731A2C8A4A4400E73EF9 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				4328731B2C8A4A5D00E73EF9 /* SpotlightViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		4328731D2C8A54F400E73EF9 /* Factory */ = {
+			isa = PBXGroup;
+			children = (
+				4328731E2C8A550400E73EF9 /* SpotlightCollectionView+Factory.swift */,
+			);
+			path = Factory;
 			sourceTree = "<group>";
 		};
 		4334A3532C89E85F005FE4E7 = {
@@ -387,11 +417,13 @@
 				4328730F2C8A386500E73EF9 /* SpotlightCollectionView.swift in Sources */,
 				432872D52C89FB2100E73EF9 /* Spotlight.swift in Sources */,
 				4334A36F2C89EB0A005FE4E7 /* AppDelegate.swift in Sources */,
+				4328731F2C8A550400E73EF9 /* SpotlightCollectionView+Factory.swift in Sources */,
 				4328730C2C8A34EB00E73EF9 /* HomeViewController.swift in Sources */,
 				432872D72C89FB8600E73EF9 /* Product.swift in Sources */,
 				432872E62C8A00AA00E73EF9 /* StoreHTTPMethod.swift in Sources */,
 				432873162C8A451B00E73EF9 /* StoreRemoteImage.swift in Sources */,
 				432873112C8A432500E73EF9 /* SpotlightCollectionViewCell.swift in Sources */,
+				4328731C2C8A4A5D00E73EF9 /* SpotlightViewModel.swift in Sources */,
 				432872DB2C89FBE300E73EF9 /* Store.swift in Sources */,
 				432873182C8A47A800E73EF9 /* StoreNetworkRequestBuilder.swift in Sources */,
 			);
