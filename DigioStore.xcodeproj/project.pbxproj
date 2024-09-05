@@ -15,6 +15,7 @@
 		432872E42C8A006C00E73EF9 /* StoreEndpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 432872E32C8A006C00E73EF9 /* StoreEndpoint.swift */; };
 		432872E62C8A00AA00E73EF9 /* StoreHTTPMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = 432872E52C8A00AA00E73EF9 /* StoreHTTPMethod.swift */; };
 		432872E82C8A018200E73EF9 /* StoreNetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 432872E72C8A018200E73EF9 /* StoreNetworkService.swift */; };
+		432872EB2C8A153400E73EF9 /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 432872EA2C8A153400E73EF9 /* HomeViewModel.swift */; };
 		4334A3642C89E860005FE4E7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4334A3632C89E860005FE4E7 /* Assets.xcassets */; };
 		4334A36F2C89EB0A005FE4E7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4334A36E2C89EB0A005FE4E7 /* AppDelegate.swift */; };
 		4334A3772C89EE53005FE4E7 /* .swiftlint.yml in Resources */ = {isa = PBXBuildFile; fileRef = 4334A3762C89EE53005FE4E7 /* .swiftlint.yml */; };
@@ -29,6 +30,7 @@
 		432872E32C8A006C00E73EF9 /* StoreEndpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoreEndpoint.swift; sourceTree = "<group>"; };
 		432872E52C8A00AA00E73EF9 /* StoreHTTPMethod.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoreHTTPMethod.swift; sourceTree = "<group>"; };
 		432872E72C8A018200E73EF9 /* StoreNetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoreNetworkService.swift; sourceTree = "<group>"; };
+		432872EA2C8A153400E73EF9 /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
 		4334A35C2C89E85F005FE4E7 /* DigioStore.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DigioStore.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4334A3632C89E860005FE4E7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4334A3652C89E860005FE4E7 /* DigioStore.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = DigioStore.entitlements; sourceTree = "<group>"; };
@@ -69,6 +71,7 @@
 		432872DD2C89FCDD00E73EF9 /* Home */ = {
 			isa = PBXGroup;
 			children = (
+				432872E92C8A151C00E73EF9 /* ViewModel */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -82,6 +85,14 @@
 				432872E72C8A018200E73EF9 /* StoreNetworkService.swift */,
 			);
 			path = Network;
+			sourceTree = "<group>";
+		};
+		432872E92C8A151C00E73EF9 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				432872EA2C8A153400E73EF9 /* HomeViewModel.swift */,
+			);
+			path = ViewModel;
 			sourceTree = "<group>";
 		};
 		4334A3532C89E85F005FE4E7 = {
@@ -212,6 +223,7 @@
 				432872D92C89FBB100E73EF9 /* Cash.swift in Sources */,
 				432872E82C8A018200E73EF9 /* StoreNetworkService.swift in Sources */,
 				432872E02C89FEA700E73EF9 /* StoreError.swift in Sources */,
+				432872EB2C8A153400E73EF9 /* HomeViewModel.swift in Sources */,
 				432872E42C8A006C00E73EF9 /* StoreEndpoint.swift in Sources */,
 				432872D52C89FB2100E73EF9 /* Spotlight.swift in Sources */,
 				4334A36F2C89EB0A005FE4E7 /* AppDelegate.swift in Sources */,

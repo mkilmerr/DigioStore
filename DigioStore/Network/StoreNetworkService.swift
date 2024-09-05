@@ -25,7 +25,8 @@ final class StoreNetworkService: StoreNetworkServiceProtocol {
         let task = URLSession.shared.dataTask(
             with: request
         ) { data, _, error in
-            if let error = error {
+
+            guard error == nil else {
                 completion(.failure(.requestFailed))
                 return
             }
@@ -42,6 +43,8 @@ final class StoreNetworkService: StoreNetworkServiceProtocol {
                 completion(.failure(.decoding))
             }
         }
+
+        task.resume()
     }
 
     func buildRequest(_ endpoint: StoreEndpoint) -> URLRequest? {
