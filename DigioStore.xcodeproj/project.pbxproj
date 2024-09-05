@@ -16,10 +16,26 @@
 		432872E62C8A00AA00E73EF9 /* StoreHTTPMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = 432872E52C8A00AA00E73EF9 /* StoreHTTPMethod.swift */; };
 		432872E82C8A018200E73EF9 /* StoreNetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 432872E72C8A018200E73EF9 /* StoreNetworkService.swift */; };
 		432872EB2C8A153400E73EF9 /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 432872EA2C8A153400E73EF9 /* HomeViewModel.swift */; };
+		432872FD2C8A1DC100E73EF9 /* HomeViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 432872FC2C8A1DC100E73EF9 /* HomeViewModelTests.swift */; };
+		432873002C8A20F300E73EF9 /* Spotlight.swift in Sources */ = {isa = PBXBuildFile; fileRef = 432872FF2C8A20F300E73EF9 /* Spotlight.swift */; };
+		432873022C8A213700E73EF9 /* Product.swift in Sources */ = {isa = PBXBuildFile; fileRef = 432873012C8A213700E73EF9 /* Product.swift */; };
+		432873042C8A215400E73EF9 /* Cash.swift in Sources */ = {isa = PBXBuildFile; fileRef = 432873032C8A215400E73EF9 /* Cash.swift */; };
+		432873062C8A219600E73EF9 /* Store.swift in Sources */ = {isa = PBXBuildFile; fileRef = 432873052C8A219600E73EF9 /* Store.swift */; };
+		432873092C8A337A00E73EF9 /* StoreNetworkServiceStub.swift in Sources */ = {isa = PBXBuildFile; fileRef = 432873082C8A337A00E73EF9 /* StoreNetworkServiceStub.swift */; };
 		4334A3642C89E860005FE4E7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4334A3632C89E860005FE4E7 /* Assets.xcassets */; };
 		4334A36F2C89EB0A005FE4E7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4334A36E2C89EB0A005FE4E7 /* AppDelegate.swift */; };
 		4334A3772C89EE53005FE4E7 /* .swiftlint.yml in Resources */ = {isa = PBXBuildFile; fileRef = 4334A3762C89EE53005FE4E7 /* .swiftlint.yml */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		432872F42C8A1D7200E73EF9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4334A3542C89E85F005FE4E7 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4334A35B2C89E85F005FE4E7;
+			remoteInfo = DigioStore;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		432872D42C89FB2100E73EF9 /* Spotlight.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Spotlight.swift; sourceTree = "<group>"; };
@@ -31,6 +47,13 @@
 		432872E52C8A00AA00E73EF9 /* StoreHTTPMethod.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoreHTTPMethod.swift; sourceTree = "<group>"; };
 		432872E72C8A018200E73EF9 /* StoreNetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoreNetworkService.swift; sourceTree = "<group>"; };
 		432872EA2C8A153400E73EF9 /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
+		432872F02C8A1D7200E73EF9 /* DigioStoreTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DigioStoreTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		432872FC2C8A1DC100E73EF9 /* HomeViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModelTests.swift; sourceTree = "<group>"; };
+		432872FF2C8A20F300E73EF9 /* Spotlight.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Spotlight.swift; sourceTree = "<group>"; };
+		432873012C8A213700E73EF9 /* Product.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Product.swift; sourceTree = "<group>"; };
+		432873032C8A215400E73EF9 /* Cash.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cash.swift; sourceTree = "<group>"; };
+		432873052C8A219600E73EF9 /* Store.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Store.swift; sourceTree = "<group>"; };
+		432873082C8A337A00E73EF9 /* StoreNetworkServiceStub.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoreNetworkServiceStub.swift; sourceTree = "<group>"; };
 		4334A35C2C89E85F005FE4E7 /* DigioStore.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DigioStore.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4334A3632C89E860005FE4E7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4334A3652C89E860005FE4E7 /* DigioStore.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = DigioStore.entitlements; sourceTree = "<group>"; };
@@ -39,6 +62,13 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		432872ED2C8A1D7200E73EF9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		4334A3592C89E85F005FE4E7 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -95,10 +125,64 @@
 			path = ViewModel;
 			sourceTree = "<group>";
 		};
+		432872F12C8A1D7200E73EF9 /* DigioStoreTests */ = {
+			isa = PBXGroup;
+			children = (
+				432872F92C8A1D7D00E73EF9 /* Scene */,
+			);
+			path = DigioStoreTests;
+			sourceTree = "<group>";
+		};
+		432872F92C8A1D7D00E73EF9 /* Scene */ = {
+			isa = PBXGroup;
+			children = (
+				432873072C8A336D00E73EF9 /* Stub */,
+				432872FE2C8A20CD00E73EF9 /* Fixtures */,
+				432872FA2C8A1D9B00E73EF9 /* Home */,
+			);
+			path = Scene;
+			sourceTree = "<group>";
+		};
+		432872FA2C8A1D9B00E73EF9 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				432872FB2C8A1DA200E73EF9 /* ViewModel */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		432872FB2C8A1DA200E73EF9 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				432872FC2C8A1DC100E73EF9 /* HomeViewModelTests.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		432872FE2C8A20CD00E73EF9 /* Fixtures */ = {
+			isa = PBXGroup;
+			children = (
+				432873052C8A219600E73EF9 /* Store.swift */,
+				432872FF2C8A20F300E73EF9 /* Spotlight.swift */,
+				432873012C8A213700E73EF9 /* Product.swift */,
+				432873032C8A215400E73EF9 /* Cash.swift */,
+			);
+			path = Fixtures;
+			sourceTree = "<group>";
+		};
+		432873072C8A336D00E73EF9 /* Stub */ = {
+			isa = PBXGroup;
+			children = (
+				432873082C8A337A00E73EF9 /* StoreNetworkServiceStub.swift */,
+			);
+			path = Stub;
+			sourceTree = "<group>";
+		};
 		4334A3532C89E85F005FE4E7 = {
 			isa = PBXGroup;
 			children = (
 				4334A35E2C89E85F005FE4E7 /* DigioStore */,
+				432872F12C8A1D7200E73EF9 /* DigioStoreTests */,
 				4334A35D2C89E85F005FE4E7 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -107,6 +191,7 @@
 			isa = PBXGroup;
 			children = (
 				4334A35C2C89E85F005FE4E7 /* DigioStore.app */,
+				432872F02C8A1D7200E73EF9 /* DigioStoreTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -128,6 +213,24 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		432872EF2C8A1D7200E73EF9 /* DigioStoreTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 432872F62C8A1D7200E73EF9 /* Build configuration list for PBXNativeTarget "DigioStoreTests" */;
+			buildPhases = (
+				432872EC2C8A1D7200E73EF9 /* Sources */,
+				432872ED2C8A1D7200E73EF9 /* Frameworks */,
+				432872EE2C8A1D7200E73EF9 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				432872F52C8A1D7200E73EF9 /* PBXTargetDependency */,
+			);
+			name = DigioStoreTests;
+			productName = DigioStoreTests;
+			productReference = 432872F02C8A1D7200E73EF9 /* DigioStoreTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 		4334A35B2C89E85F005FE4E7 /* DigioStore */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 4334A36B2C89E860005FE4E7 /* Build configuration list for PBXNativeTarget "DigioStore" */;
@@ -156,6 +259,10 @@
 				LastSwiftUpdateCheck = 1500;
 				LastUpgradeCheck = 1500;
 				TargetAttributes = {
+					432872EF2C8A1D7200E73EF9 = {
+						CreatedOnToolsVersion = 15.0.1;
+						TestTargetID = 4334A35B2C89E85F005FE4E7;
+					};
 					4334A35B2C89E85F005FE4E7 = {
 						CreatedOnToolsVersion = 15.0.1;
 						LastSwiftMigration = 1500;
@@ -176,11 +283,19 @@
 			projectRoot = "";
 			targets = (
 				4334A35B2C89E85F005FE4E7 /* DigioStore */,
+				432872EF2C8A1D7200E73EF9 /* DigioStoreTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		432872EE2C8A1D7200E73EF9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		4334A35A2C89E85F005FE4E7 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -216,6 +331,19 @@
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		432872EC2C8A1D7200E73EF9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				432873092C8A337A00E73EF9 /* StoreNetworkServiceStub.swift in Sources */,
+				432873002C8A20F300E73EF9 /* Spotlight.swift in Sources */,
+				432873022C8A213700E73EF9 /* Product.swift in Sources */,
+				432873042C8A215400E73EF9 /* Cash.swift in Sources */,
+				432873062C8A219600E73EF9 /* Store.swift in Sources */,
+				432872FD2C8A1DC100E73EF9 /* HomeViewModelTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		4334A3582C89E85F005FE4E7 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -235,7 +363,58 @@
 		};
 /* End PBXSourcesBuildPhase section */
 
+/* Begin PBXTargetDependency section */
+		432872F52C8A1D7200E73EF9 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 4334A35B2C89E85F005FE4E7 /* DigioStore */;
+			targetProxy = 432872F42C8A1D7200E73EF9 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
 /* Begin XCBuildConfiguration section */
+		432872F72C8A1D7200E73EF9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = JA3K44V4L9;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = kilmer.DigioStoreTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DigioStore.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/DigioStore";
+			};
+			name = Debug;
+		};
+		432872F82C8A1D7200E73EF9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = JA3K44V4L9;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = kilmer.DigioStoreTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DigioStore.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/DigioStore";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
 		4334A3692C89E860005FE4E7 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -428,6 +607,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		432872F62C8A1D7200E73EF9 /* Build configuration list for PBXNativeTarget "DigioStoreTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				432872F72C8A1D7200E73EF9 /* Debug */,
+				432872F82C8A1D7200E73EF9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		4334A3572C89E85F005FE4E7 /* Build configuration list for PBXProject "DigioStore" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
