@@ -62,8 +62,8 @@
             filePath = "DigioStore/Scene/Home/View/HomeViewController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "34"
-            endingLineNumber = "34"
+            startingLineNumber = "36"
+            endingLineNumber = "36"
             landmarkName = "viewDidLoad()"
             landmarkType = "7">
          </BreakpointContent>
@@ -94,8 +94,8 @@
             filePath = "DigioStore/Scene/Home/View/HomeViewController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "32"
-            endingLineNumber = "32"
+            startingLineNumber = "33"
+            endingLineNumber = "33"
             landmarkName = "viewDidLoad()"
             landmarkType = "7">
          </BreakpointContent>
@@ -271,6 +271,54 @@
             endingLineNumber = "19"
             landmarkName = "collectionView(_:didSelectItemAt:)"
             landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "67EFD44D-6D8E-46FA-9CDE-82C9F2920702"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "DigioStore/Scene/Cash/View/CashBannerView.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "62"
+            endingLineNumber = "62"
+            landmarkName = "loadCashBanner(with:)"
+            landmarkType = "9">
+            <Locations>
+               <Location
+                  uuid = "67EFD44D-6D8E-46FA-9CDE-82C9F2920702 - 81420e70f56a40f0"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (DigioStore.CashBanner) -&gt; () in DigioStore.CashBannerView.loadCashBanner(with: DigioStore.Cash) -&gt; ()"
+                  moduleName = "DigioStore"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/kilmer/Desktop/DigioStore/DigioStore/Scene/Cash/View/CashBannerView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "63"
+                  endingLineNumber = "63"
+                  offsetFromSymbolStart = "16">
+               </Location>
+               <Location
+                  uuid = "67EFD44D-6D8E-46FA-9CDE-82C9F2920702 - 81420e70f56a4093"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (DigioStore.CashBanner) -&gt; () in DigioStore.CashBannerView.loadCashBanner(with: DigioStore.Cash) -&gt; ()"
+                  moduleName = "DigioStore"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/kilmer/Desktop/DigioStore/DigioStore/Scene/Cash/View/CashBannerView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "62"
+                  endingLineNumber = "62"
+                  offsetFromSymbolStart = "75">
+               </Location>
+            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>

@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		4315ACE22C8AA3AB008AB238 /* SpotlightCollectionViewDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4315ACE12C8AA3AB008AB238 /* SpotlightCollectionViewDelegate.swift */; };
 		4315ACE72C8AA568008AB238 /* CashViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4315ACE62C8AA568008AB238 /* CashViewModel.swift */; };
+		4315ACE92C8AAA35008AB238 /* CashBannerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4315ACE82C8AAA35008AB238 /* CashBannerView.swift */; };
+		4315ACEC2C8AAAD9008AB238 /* CashBannerView+Factory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4315ACEB2C8AAAD9008AB238 /* CashBannerView+Factory.swift */; };
 		432872D52C89FB2100E73EF9 /* Spotlight.swift in Sources */ = {isa = PBXBuildFile; fileRef = 432872D42C89FB2100E73EF9 /* Spotlight.swift */; };
 		432872D72C89FB8600E73EF9 /* Product.swift in Sources */ = {isa = PBXBuildFile; fileRef = 432872D62C89FB8600E73EF9 /* Product.swift */; };
 		432872D92C89FBB100E73EF9 /* Cash.swift in Sources */ = {isa = PBXBuildFile; fileRef = 432872D82C89FBB100E73EF9 /* Cash.swift */; };
@@ -50,6 +52,8 @@
 /* Begin PBXFileReference section */
 		4315ACE12C8AA3AB008AB238 /* SpotlightCollectionViewDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpotlightCollectionViewDelegate.swift; sourceTree = "<group>"; };
 		4315ACE62C8AA568008AB238 /* CashViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CashViewModel.swift; sourceTree = "<group>"; };
+		4315ACE82C8AAA35008AB238 /* CashBannerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CashBannerView.swift; sourceTree = "<group>"; };
+		4315ACEB2C8AAAD9008AB238 /* CashBannerView+Factory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CashBannerView+Factory.swift"; sourceTree = "<group>"; };
 		432872D42C89FB2100E73EF9 /* Spotlight.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Spotlight.swift; sourceTree = "<group>"; };
 		432872D62C89FB8600E73EF9 /* Product.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Product.swift; sourceTree = "<group>"; };
 		432872D82C89FBB100E73EF9 /* Cash.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cash.swift; sourceTree = "<group>"; };
@@ -110,6 +114,7 @@
 		4315ACE32C8AA518008AB238 /* Cash */ = {
 			isa = PBXGroup;
 			children = (
+				4315ACEA2C8AAAC6008AB238 /* Factory */,
 				4315ACE42C8AA540008AB238 /* View */,
 				4315ACE52C8AA553008AB238 /* ViewModel */,
 			);
@@ -119,6 +124,7 @@
 		4315ACE42C8AA540008AB238 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				4315ACE82C8AAA35008AB238 /* CashBannerView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -129,6 +135,14 @@
 				4315ACE62C8AA568008AB238 /* CashViewModel.swift */,
 			);
 			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		4315ACEA2C8AAAC6008AB238 /* Factory */ = {
+			isa = PBXGroup;
+			children = (
+				4315ACEB2C8AAAD9008AB238 /* CashBannerView+Factory.swift */,
+			);
+			path = Factory;
 			sourceTree = "<group>";
 		};
 		432872D32C89FB0100E73EF9 /* Model */ = {
@@ -468,6 +482,8 @@
 				4334A36F2C89EB0A005FE4E7 /* AppDelegate.swift in Sources */,
 				4335BEA52C8AA06A00A12A40 /* SpotlightCollectionViewDataSource.swift in Sources */,
 				4328731F2C8A550400E73EF9 /* SpotlightCollectionView+Factory.swift in Sources */,
+				4315ACEC2C8AAAD9008AB238 /* CashBannerView+Factory.swift in Sources */,
+				4315ACE92C8AAA35008AB238 /* CashBannerView.swift in Sources */,
 				4328730C2C8A34EB00E73EF9 /* HomeViewController.swift in Sources */,
 				432872D72C89FB8600E73EF9 /* Product.swift in Sources */,
 				432872E62C8A00AA00E73EF9 /* StoreHTTPMethod.swift in Sources */,

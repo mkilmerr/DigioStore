@@ -31,15 +31,17 @@ final class CashViewModel: CashViewModelProtocol {
     func loadCashBanner(from cash: Cash) {
         service.request(.getRemoteImage(cash.bannerURL)) { [weak self] result in
             guard let self else { return }
-            let banner = self.createCashBanner(
-                from: cash,
-                result: result
-            )
             
-            self.onBannerLoaded?(banner)
+            DispatchQueue.main.async {
+                let banner = self.createCashBanner(
+                    from: cash,
+                    result: result
+                )
+                
+                self.onBannerLoaded?(banner)
+            }
         }
     }
-    
     
     func createCashBanner(
         from cash: Cash,
