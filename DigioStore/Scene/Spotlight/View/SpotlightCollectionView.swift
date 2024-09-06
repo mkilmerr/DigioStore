@@ -7,7 +7,7 @@
 
 import UIKit
 
-class SpotlightCollectionView: UICollectionView {
+final class SpotlightCollectionView: UICollectionView {
     var viewModel: SpotlightViewModelProtocol
     var collectionDataSource: SpotlightCollectionViewDataSource = .init(spotlightBanners: [])
     var collectionDelegate = SpotlightCollectionViewDelegate()

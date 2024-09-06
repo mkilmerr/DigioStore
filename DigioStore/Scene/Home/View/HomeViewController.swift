@@ -11,7 +11,7 @@ final class HomeViewController: UIViewController {
     private let headerView = HomeHeaderView()
     private let spotlightCollectionView: SpotlightCollectionView = .make()
     private let cashBannerView: CashBannerView = .make()
-    private let productsBannerView: CashBannerView = .make()
+    private let productsBannerView: ProductCollectionView = .make()
     private let contentScrollView = UIScrollView()
 
     private lazy var contentStackView: UIStackView = {
@@ -47,7 +47,8 @@ final class HomeViewController: UIViewController {
             case .success(let store):
                 spotlightCollectionView.loadBanners(with: store.spotlight)
                 cashBannerView.loadCashBanner(with: store.cash)
-                productsBannerView.loadCashBanner(with: store.cash)
+                productsBannerView.loadProductBanner(with: store.products)
+//                productsBannerView.
             case .error(let error):
                 spotlightCollectionView.loadBanners(with: [])
             }

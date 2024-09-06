@@ -62,8 +62,8 @@
             filePath = "DigioStore/Scene/Home/View/HomeViewController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "52"
-            endingLineNumber = "52"
+            startingLineNumber = "53"
+            endingLineNumber = "53"
             landmarkName = "viewDidLoad()"
             landmarkType = "7">
          </BreakpointContent>
@@ -317,6 +317,54 @@
                   startingLineNumber = "62"
                   endingLineNumber = "62"
                   offsetFromSymbolStart = "75">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "646F01FF-F89B-4D48-B387-88DB1B44D92F"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "DigioStore/Scene/Product/View/ProductCollectionViewCell.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "34"
+            endingLineNumber = "34"
+            landmarkName = "setup(with:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "646F01FF-F89B-4D48-B387-88DB1B44D92F - 797a89f102582185"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "DigioStore.ProductCollectionViewCell.setup(with: DigioStore.ProductBanner) -&gt; ()"
+                  moduleName = "DigioStore"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/kilmer/Desktop/DigioStore/DigioStore/Scene/Product/View/ProductCollectionViewCell.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "35"
+                  endingLineNumber = "35"
+                  offsetFromSymbolStart = "36">
+               </Location>
+               <Location
+                  uuid = "646F01FF-F89B-4D48-B387-88DB1B44D92F - 797a89f102582064"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "DigioStore.ProductCollectionViewCell.setup(with: DigioStore.ProductBanner) -&gt; ()"
+                  moduleName = "DigioStore"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/kilmer/Desktop/DigioStore/DigioStore/Scene/Product/View/ProductCollectionViewCell.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "34"
+                  endingLineNumber = "34"
+                  offsetFromSymbolStart = "36">
                </Location>
             </Locations>
          </BreakpointContent>

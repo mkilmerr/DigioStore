@@ -33,7 +33,7 @@ final class SpotlightViewModel: SpotlightViewModelProtocol {
 
     func loadSpotlightBannertItens(_ spotlights: [Spotlight]) {
         spotlights.forEach { spotlight in
-            service.request(.getRemoteImage(spotlight.bannerURL)) { [weak self] result in
+            service.request(.getRemoteImage(spotlight.bannerURL)) { result in
                 DispatchQueue.main.async { [weak self] in
                     guard let self else { return }
                     let banner = createSpotlightBanner(from: spotlight, result: result)
