@@ -11,8 +11,8 @@ class HomeViewController: UIViewController {
     private let spotlightCollectionView: SpotlightCollectionView = .make()
     private let cashBannerView: CashBannerView = .make()
     private let productsBannerView: CashBannerView = .make()
+    private let contentScrollView = UIScrollView()
 
-    
     private lazy var contentStackView: UIStackView = {
         let stackView = UIStackView(arrangedSubviews: [spotlightCollectionView, cashBannerView, productsBannerView])
         stackView.spacing = 24
@@ -48,15 +48,27 @@ class HomeViewController: UIViewController {
             }
         }
         
-        view.addSubview(contentStackView)
+        view.addSubview(contentScrollView)
+        contentScrollView.translatesAutoresizingMaskIntoConstraints = false
+        contentScrollView.addSubview(contentStackView)
         
         NSLayoutConstraint.activate([
-            contentStackView.leadingAnchor.constraint(equalTo: view.leadingAnchor),
-            contentStackView.trailingAnchor.constraint(equalTo: view.trailingAnchor),
-            contentStackView.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor, constant: 10),
-            contentStackView.bottomAnchor.constraint(equalTo: view.safeAreaLayoutGuide.bottomAnchor),
-            spotlightCollectionView.heightAnchor.constraint(equalTo: contentStackView.heightAnchor, multiplier: 0.3),
-            cashBannerView.heightAnchor.constraint(equalTo: spotlightCollectionView.heightAnchor, multiplier: 1.0)
+            contentScrollView.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor),
+            contentScrollView.bottomAnchor.constraint(equalTo: view.safeAreaLayoutGuide.bottomAnchor),
+            contentScrollView.leadingAnchor.constraint(equalTo: view.leadingAnchor),
+            contentScrollView.trailingAnchor.constraint(equalTo: view.trailingAnchor)
+        ])
+        
+        NSLayoutConstraint.activate([
+            contentStackView.leadingAnchor.constraint(equalTo: contentScrollView.contentLayoutGuide.leadingAnchor),
+            contentStackView.trailingAnchor.constraint(equalTo: contentScrollView.contentLayoutGuide.trailingAnchor),
+            contentStackView.topAnchor.constraint(equalTo: contentScrollView.contentLayoutGuide.topAnchor, constant: 10),
+            contentStackView.bottomAnchor.constraint(equalTo: contentScrollView.contentLayoutGuide.bottomAnchor),
+            contentStackView.widthAnchor.constraint(equalTo: contentScrollView.frameLayoutGuide.widthAnchor),
+            
+            spotlightCollectionView.heightAnchor.constraint(equalTo: contentScrollView.heightAnchor, multiplier: 0.3),
+            cashBannerView.heightAnchor.constraint(equalTo: contentScrollView.heightAnchor, multiplier: 0.3),
+            productsBannerView.heightAnchor.constraint(equalTo: contentScrollView.heightAnchor, multiplier: 0.3)
         ])
     }
 }

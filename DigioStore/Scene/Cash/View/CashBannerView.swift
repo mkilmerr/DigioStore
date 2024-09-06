@@ -18,7 +18,7 @@ final class CashBannerView: UIView {
     private let bannerImageView: UIImageView = {
        let imageView = UIImageView()
         imageView.contentMode = .scaleToFill
-        imageView.layer.cornerRadius = 24
+        imageView.layer.cornerRadius = 12
         imageView.layer.masksToBounds = true
         return imageView
     }()
