@@ -9,6 +9,8 @@ import UIKit
 
 class SpotlightCollectionView: UICollectionView {
     var viewModel: SpotlightViewModelProtocol
+    var collectionDataSource: SpotlightCollectionViewDataSource = .init(spotlightBanners: [])
+    var collectionDelegate = SpotlightCollectionViewDelegate()
 
     init(viewModel: SpotlightViewModelProtocol) {
         let layout = UICollectionViewFlowLayout()
@@ -21,8 +23,8 @@ class SpotlightCollectionView: UICollectionView {
         
         self.backgroundColor = .red
         self.showsHorizontalScrollIndicator = false
-        self.dataSource = self
-        self.delegate = self
+        self.dataSource = collectionDataSource
+        self.delegate = collectionDelegate
 
         self.register(
             SpotlightCollectionViewCell.self,
@@ -37,30 +39,10 @@ class SpotlightCollectionView: UICollectionView {
     public func loadBanners(with spotlights: [Spotlight]) {
         viewModel.loadSpotlightBannertItens(spotlights)
         
-        viewModel.onBannersLoaded = { [weak self] in 
-            self?.reloadData()
+        viewModel.onBannersLoaded = { [weak self] in
+            guard let self else { return }
+            collectionDataSource.spotlightBanners = self.viewModel.spotlightBanners
+            self.reloadData()
         }
-    }
-}
-
-extension SpotlightCollectionView: UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout {
-    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        viewModel.spotlightBanners.count
-    }
-
-    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: SpotlightCollectionViewCell.reuseIdentifier, for: indexPath) as? SpotlightCollectionViewCell else { return UICollectionViewCell() }
-        
-        cell.setup(with: viewModel.spotlightBanners[indexPath.row])
-        
-        return cell
-    }
-    
-    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
-        return CGSizeMake(collectionView.frame.size.width - 24, collectionView.frame.size.height)
-    }
-
-    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-
     }
 }

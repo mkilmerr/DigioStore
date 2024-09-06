@@ -110,8 +110,8 @@
             filePath = "DigioStore/Scene/Spotlight/View/SpotlightCollectionView.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "37"
-            endingLineNumber = "37"
+            startingLineNumber = "39"
+            endingLineNumber = "39"
             landmarkName = "loadBanners(with:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -174,8 +174,8 @@
             filePath = "DigioStore/Scene/Spotlight/View/SpotlightCollectionView.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "41"
-            endingLineNumber = "41"
+            startingLineNumber = "45"
+            endingLineNumber = "45"
             landmarkName = "loadBanners(with:)"
             landmarkType = "7">
             <Locations>
@@ -260,15 +260,15 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "1C0E699C-2742-4EFF-BA4B-3905BBAFDE18"
+            uuid = "100D0991-AAAF-40B2-B88E-E8DDFD6E8D32"
             shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "DigioStore/Scene/Spotlight/View/SpotlightCollectionView.swift"
+            filePath = "DigioStore/Scene/Spotlight/Delegate/SpotlightCollectionViewDelegate.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "64"
-            endingLineNumber = "64"
+            startingLineNumber = "19"
+            endingLineNumber = "19"
             landmarkName = "collectionView(_:didSelectItemAt:)"
             landmarkType = "7">
          </BreakpointContent>
