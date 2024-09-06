@@ -15,7 +15,7 @@ extension UIImage {
         case .success(let remoteImage):
             image = remoteImage
         case .failure:
-            image = UIImage(named: "")
+            image = UIImage(named: "mainIcon")
         }
         
         return image

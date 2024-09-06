@@ -10,7 +10,7 @@ import UIKit
 final class HomeHeaderView: UIView {
     private let headerImageView: UIImageView = {
         let imageView = UIImageView(
-            image: UIImage(named: "logoHeader")
+            image: UIImage(named: "mainIcon")
         )
         imageView.contentMode = .scaleAspectFit
         return imageView
