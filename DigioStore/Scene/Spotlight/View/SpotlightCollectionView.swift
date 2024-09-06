@@ -13,9 +13,8 @@ class SpotlightCollectionView: UICollectionView {
     init(viewModel: SpotlightViewModelProtocol) {
         let layout = UICollectionViewFlowLayout()
         layout.scrollDirection = .horizontal
-        layout.itemSize = CGSize(width: 350, height: 250)
         layout.minimumLineSpacing = 10
-        layout.sectionInset = UIEdgeInsets(top: 0, left: 16, bottom: 0, right: 16)
+        layout.sectionInset = UIEdgeInsets(top: 0, left: 4, bottom: 0, right: 16)
 
         self.viewModel = viewModel
         super.init(frame: .zero, collectionViewLayout: layout)
@@ -44,14 +43,21 @@ class SpotlightCollectionView: UICollectionView {
     }
 }
 
-extension SpotlightCollectionView: UICollectionViewDelegate, UICollectionViewDataSource {
+extension SpotlightCollectionView: UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout {
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         viewModel.spotlightBanners.count
     }
 
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: SpotlightCollectionViewCell.reuseIdentifier, for: indexPath)
+        guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: SpotlightCollectionViewCell.reuseIdentifier, for: indexPath) as? SpotlightCollectionViewCell else { return UICollectionViewCell() }
+        
+        cell.setup(with: viewModel.spotlightBanners[indexPath.row])
+        
         return cell
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
+        return CGSizeMake(collectionView.frame.size.width - 24, collectionView.frame.size.height)
     }
 
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
