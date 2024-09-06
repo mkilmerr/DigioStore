@@ -37,6 +37,7 @@ final class SpotlightCollectionViewCell: UICollectionViewCell {
     private func setupView() {
         layer.cornerRadius = 24
         layer.masksToBounds = true
+        applyShadow()
         
         addSubview(bannerImageView)
         

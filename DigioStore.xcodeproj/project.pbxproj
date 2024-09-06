@@ -12,6 +12,7 @@
 		4315ACE92C8AAA35008AB238 /* CashBannerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4315ACE82C8AAA35008AB238 /* CashBannerView.swift */; };
 		4315ACEC2C8AAAD9008AB238 /* CashBannerView+Factory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4315ACEB2C8AAAD9008AB238 /* CashBannerView+Factory.swift */; };
 		4315ACEE2C8AB80F008AB238 /* HomeHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4315ACED2C8AB80F008AB238 /* HomeHeaderView.swift */; };
+		4315ACF12C8AC319008AB238 /* UIView+Shadow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4315ACF02C8AC319008AB238 /* UIView+Shadow.swift */; };
 		432872D52C89FB2100E73EF9 /* Spotlight.swift in Sources */ = {isa = PBXBuildFile; fileRef = 432872D42C89FB2100E73EF9 /* Spotlight.swift */; };
 		432872D72C89FB8600E73EF9 /* Product.swift in Sources */ = {isa = PBXBuildFile; fileRef = 432872D62C89FB8600E73EF9 /* Product.swift */; };
 		432872D92C89FBB100E73EF9 /* Cash.swift in Sources */ = {isa = PBXBuildFile; fileRef = 432872D82C89FBB100E73EF9 /* Cash.swift */; };
@@ -56,6 +57,7 @@
 		4315ACE82C8AAA35008AB238 /* CashBannerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CashBannerView.swift; sourceTree = "<group>"; };
 		4315ACEB2C8AAAD9008AB238 /* CashBannerView+Factory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CashBannerView+Factory.swift"; sourceTree = "<group>"; };
 		4315ACED2C8AB80F008AB238 /* HomeHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeHeaderView.swift; sourceTree = "<group>"; };
+		4315ACF02C8AC319008AB238 /* UIView+Shadow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Shadow.swift"; sourceTree = "<group>"; };
 		432872D42C89FB2100E73EF9 /* Spotlight.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Spotlight.swift; sourceTree = "<group>"; };
 		432872D62C89FB8600E73EF9 /* Product.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Product.swift; sourceTree = "<group>"; };
 		432872D82C89FBB100E73EF9 /* Cash.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cash.swift; sourceTree = "<group>"; };
@@ -145,6 +147,14 @@
 				4315ACEB2C8AAAD9008AB238 /* CashBannerView+Factory.swift */,
 			);
 			path = Factory;
+			sourceTree = "<group>";
+		};
+		4315ACEF2C8AC2E2008AB238 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				4315ACF02C8AC319008AB238 /* UIView+Shadow.swift */,
+			);
+			path = Utils;
 			sourceTree = "<group>";
 		};
 		432872D32C89FB0100E73EF9 /* Model */ = {
@@ -318,6 +328,7 @@
 		4334A35E2C89E85F005FE4E7 /* DigioStore */ = {
 			isa = PBXGroup;
 			children = (
+				4315ACEF2C8AC2E2008AB238 /* Utils */,
 				432872DE2C89FD2400E73EF9 /* Network */,
 				432872DC2C89FCB400E73EF9 /* Scene */,
 				432872D32C89FB0100E73EF9 /* Model */,
@@ -491,6 +502,7 @@
 				432872D72C89FB8600E73EF9 /* Product.swift in Sources */,
 				432872E62C8A00AA00E73EF9 /* StoreHTTPMethod.swift in Sources */,
 				4315ACE72C8AA568008AB238 /* CashViewModel.swift in Sources */,
+				4315ACF12C8AC319008AB238 /* UIView+Shadow.swift in Sources */,
 				432873162C8A451B00E73EF9 /* StoreRemoteImage.swift in Sources */,
 				432873112C8A432500E73EF9 /* SpotlightCollectionViewCell.swift in Sources */,
 				4328731C2C8A4A5D00E73EF9 /* SpotlightViewModel.swift in Sources */,
