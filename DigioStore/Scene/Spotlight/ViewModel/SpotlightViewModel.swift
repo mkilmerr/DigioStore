@@ -51,15 +51,7 @@ final class SpotlightViewModel: SpotlightViewModelProtocol {
         from item: Spotlight,
         result: Result<UIImage, StoreError>
     ) -> SpotlightBanner {
-        let image: UIImage?
-
-        switch result {
-        case .success(let remoteImage):
-            image = remoteImage
-        case .failure:
-            image = UIImage(named: "")
-        }
-
+        let image: UIImage? = .loadRemote(with: result)
         return .init(name: item.name, image: image, description: item.description)
 
     }

@@ -53,15 +53,7 @@ final class ProductViewModel: ProductViewModelProtocol {
         from item: Product,
         result: Result<UIImage, StoreError>
     ) -> ProductBanner {
-        let image: UIImage?
-
-        switch result {
-        case .success(let remoteImage):
-            image = remoteImage
-        case .failure:
-            image = UIImage(named: "")
-        }
-
+        let image: UIImage? = .loadRemote(with: result)
         return .init(name: item.name, image: image, description: item.description)
     }
 }
