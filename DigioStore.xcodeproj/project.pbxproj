@@ -46,6 +46,7 @@
 		4334A3772C89EE53005FE4E7 /* .swiftlint.yml in Resources */ = {isa = PBXBuildFile; fileRef = 4334A3762C89EE53005FE4E7 /* .swiftlint.yml */; };
 		4335BEA52C8AA06A00A12A40 /* SpotlightCollectionViewDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4335BEA42C8AA06A00A12A40 /* SpotlightCollectionViewDataSource.swift */; };
 		4347C7AE2C8BB5E2007F682E /* StoreRemoteImageStub.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4347C7AD2C8BB5E2007F682E /* StoreRemoteImageStub.swift */; };
+		4347C7B22C8BB7E5007F682E /* CashViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4347C7B12C8BB7E5007F682E /* CashViewModelTests.swift */; };
 		4370042B2C8B8C24007B8D44 /* UIImage+Remote.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4370042A2C8B8C24007B8D44 /* UIImage+Remote.swift */; };
 		4370042F2C8B97EE007B8D44 /* SpotlightViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4370042E2C8B97EE007B8D44 /* SpotlightViewModelTests.swift */; };
 /* End PBXBuildFile section */
@@ -103,6 +104,7 @@
 		4334A3762C89EE53005FE4E7 /* .swiftlint.yml */ = {isa = PBXFileReference; lastKnownFileType = text.yaml; path = .swiftlint.yml; sourceTree = "<group>"; };
 		4335BEA42C8AA06A00A12A40 /* SpotlightCollectionViewDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpotlightCollectionViewDataSource.swift; sourceTree = "<group>"; };
 		4347C7AD2C8BB5E2007F682E /* StoreRemoteImageStub.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoreRemoteImageStub.swift; sourceTree = "<group>"; };
+		4347C7B12C8BB7E5007F682E /* CashViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CashViewModelTests.swift; sourceTree = "<group>"; };
 		4370042A2C8B8C24007B8D44 /* UIImage+Remote.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage+Remote.swift"; sourceTree = "<group>"; };
 		4370042E2C8B97EE007B8D44 /* SpotlightViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpotlightViewModelTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -285,7 +287,6 @@
 			isa = PBXGroup;
 			children = (
 				432872F92C8A1D7D00E73EF9 /* Scene */,
-				4370042C2C8B97B3007B8D44 /* Spotlight */,
 			);
 			path = DigioStoreTests;
 			sourceTree = "<group>";
@@ -293,6 +294,8 @@
 		432872F92C8A1D7D00E73EF9 /* Scene */ = {
 			isa = PBXGroup;
 			children = (
+				4347C7AF2C8BB7B7007F682E /* Cash */,
+				4370042C2C8B97B3007B8D44 /* Spotlight */,
 				432873072C8A336D00E73EF9 /* Stub */,
 				432872FE2C8A20CD00E73EF9 /* Fixtures */,
 				432872FA2C8A1D9B00E73EF9 /* Home */,
@@ -421,6 +424,22 @@
 				4335BEA42C8AA06A00A12A40 /* SpotlightCollectionViewDataSource.swift */,
 			);
 			path = DataSource;
+			sourceTree = "<group>";
+		};
+		4347C7AF2C8BB7B7007F682E /* Cash */ = {
+			isa = PBXGroup;
+			children = (
+				4347C7B02C8BB7D3007F682E /* ViewModel */,
+			);
+			path = Cash;
+			sourceTree = "<group>";
+		};
+		4347C7B02C8BB7D3007F682E /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				4347C7B12C8BB7E5007F682E /* CashViewModelTests.swift */,
+			);
+			path = ViewModel;
 			sourceTree = "<group>";
 		};
 		4370042C2C8B97B3007B8D44 /* Spotlight */ = {
@@ -571,6 +590,7 @@
 				4370042F2C8B97EE007B8D44 /* SpotlightViewModelTests.swift in Sources */,
 				432873062C8A219600E73EF9 /* Store.swift in Sources */,
 				432872FD2C8A1DC100E73EF9 /* HomeViewModelTests.swift in Sources */,
+				4347C7B22C8BB7E5007F682E /* CashViewModelTests.swift in Sources */,
 				4347C7AE2C8BB5E2007F682E /* StoreRemoteImageStub.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

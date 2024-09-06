@@ -74,7 +74,6 @@ final class SpotlightViewModelTests: XCTestCase {
             XCTFail("Unexpected success")
         }
     }
-
 }
 
 extension SpotlightViewModelTests {
