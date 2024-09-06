@@ -29,8 +29,4 @@ final class StoreNetworkServiceStub: StoreNetworkServiceProtocol {
             }
         }
     }
-
-    func buildRequest(_ endpoint: StoreEndpoint) -> URLRequest? {
-        nil
-    }
 }

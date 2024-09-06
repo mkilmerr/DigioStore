@@ -46,6 +46,7 @@
 		4334A3772C89EE53005FE4E7 /* .swiftlint.yml in Resources */ = {isa = PBXBuildFile; fileRef = 4334A3762C89EE53005FE4E7 /* .swiftlint.yml */; };
 		4335BEA52C8AA06A00A12A40 /* SpotlightCollectionViewDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4335BEA42C8AA06A00A12A40 /* SpotlightCollectionViewDataSource.swift */; };
 		4370042B2C8B8C24007B8D44 /* UIImage+Remote.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4370042A2C8B8C24007B8D44 /* UIImage+Remote.swift */; };
+		4370042F2C8B97EE007B8D44 /* SpotlightViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4370042E2C8B97EE007B8D44 /* SpotlightViewModelTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -101,6 +102,7 @@
 		4334A3762C89EE53005FE4E7 /* .swiftlint.yml */ = {isa = PBXFileReference; lastKnownFileType = text.yaml; path = .swiftlint.yml; sourceTree = "<group>"; };
 		4335BEA42C8AA06A00A12A40 /* SpotlightCollectionViewDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpotlightCollectionViewDataSource.swift; sourceTree = "<group>"; };
 		4370042A2C8B8C24007B8D44 /* UIImage+Remote.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage+Remote.swift"; sourceTree = "<group>"; };
+		4370042E2C8B97EE007B8D44 /* SpotlightViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpotlightViewModelTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -281,6 +283,7 @@
 			isa = PBXGroup;
 			children = (
 				432872F92C8A1D7D00E73EF9 /* Scene */,
+				4370042C2C8B97B3007B8D44 /* Spotlight */,
 			);
 			path = DigioStoreTests;
 			sourceTree = "<group>";
@@ -417,6 +420,22 @@
 			path = DataSource;
 			sourceTree = "<group>";
 		};
+		4370042C2C8B97B3007B8D44 /* Spotlight */ = {
+			isa = PBXGroup;
+			children = (
+				4370042D2C8B97CF007B8D44 /* ViewModel */,
+			);
+			path = Spotlight;
+			sourceTree = "<group>";
+		};
+		4370042D2C8B97CF007B8D44 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				4370042E2C8B97EE007B8D44 /* SpotlightViewModelTests.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -546,6 +565,7 @@
 				432873002C8A20F300E73EF9 /* Spotlight.swift in Sources */,
 				432873022C8A213700E73EF9 /* Product.swift in Sources */,
 				432873042C8A215400E73EF9 /* Cash.swift in Sources */,
+				4370042F2C8B97EE007B8D44 /* SpotlightViewModelTests.swift in Sources */,
 				432873062C8A219600E73EF9 /* Store.swift in Sources */,
 				432872FD2C8A1DC100E73EF9 /* HomeViewModelTests.swift in Sources */,
 			);
