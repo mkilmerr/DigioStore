@@ -9,7 +9,17 @@ import UIKit
 
 class HomeViewController: UIViewController {
     private let spotlightCollectionView: SpotlightCollectionView = .make()
-    private let cashBanner: CashBannerView = .make()
+    private let cashBannerView: CashBannerView = .make()
+    private let productsBannerView: CashBannerView = .make()
+
+    
+    private lazy var contentStackView: UIStackView = {
+        let stackView = UIStackView(arrangedSubviews: [spotlightCollectionView, cashBannerView, productsBannerView])
+        stackView.spacing = 24
+        stackView.axis = .vertical
+        stackView.translatesAutoresizingMaskIntoConstraints = false
+        return stackView
+    }()
 
     let viewModel: HomeViewModelProtocol
 
@@ -31,29 +41,22 @@ class HomeViewController: UIViewController {
             case .loading: break
             case .success(let store):
                 spotlightCollectionView.loadBanners(with: store.spotlight)
-                cashBanner.loadCashBanner(with: store.cash)
+                cashBannerView.loadCashBanner(with: store.cash)
+                productsBannerView.loadCashBanner(with: store.cash)
             case .error(let error):
                 spotlightCollectionView.loadBanners(with: [])
             }
         }
-
-        view.addSubview(spotlightCollectionView)
-        view.addSubview(cashBanner)
-
-        spotlightCollectionView.translatesAutoresizingMaskIntoConstraints = false
-        cashBanner.translatesAutoresizingMaskIntoConstraints = false
+        
+        view.addSubview(contentStackView)
         
         NSLayoutConstraint.activate([
-            spotlightCollectionView.leadingAnchor.constraint(equalTo: view.leadingAnchor),
-            spotlightCollectionView.trailingAnchor.constraint(equalTo: view.trailingAnchor),
-            spotlightCollectionView.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor, constant: 10),
-            spotlightCollectionView.heightAnchor.constraint(equalTo: view.heightAnchor, multiplier: 0.3)
-        ])
-        
-        NSLayoutConstraint.activate([
-            cashBanner.topAnchor.constraint(equalTo: spotlightCollectionView.bottomAnchor, constant: 32),
-            cashBanner.leadingAnchor.constraint(equalTo: view.leadingAnchor),
-            cashBanner.trailingAnchor.constraint(equalTo: view.trailingAnchor)
+            contentStackView.leadingAnchor.constraint(equalTo: view.leadingAnchor),
+            contentStackView.trailingAnchor.constraint(equalTo: view.trailingAnchor),
+            contentStackView.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor, constant: 10),
+            contentStackView.bottomAnchor.constraint(equalTo: view.safeAreaLayoutGuide.bottomAnchor),
+            spotlightCollectionView.heightAnchor.constraint(equalTo: contentStackView.heightAnchor, multiplier: 0.3),
+            cashBannerView.heightAnchor.constraint(equalTo: spotlightCollectionView.heightAnchor, multiplier: 1.0)
         ])
     }
 }

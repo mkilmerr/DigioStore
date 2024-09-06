@@ -26,7 +26,7 @@ final class CashBannerView: UIView {
     private lazy var stackView: UIStackView = {
         let stackView = UIStackView(arrangedSubviews: [title, bannerImageView])
         stackView.axis = .vertical
-        stackView.spacing = 16
+        stackView.spacing = 4
         stackView.translatesAutoresizingMaskIntoConstraints = false
         return stackView
     }()
@@ -51,7 +51,8 @@ final class CashBannerView: UIView {
             stackView.topAnchor.constraint(equalTo: topAnchor),
             stackView.leadingAnchor.constraint(equalTo: leadingAnchor),
             stackView.trailingAnchor.constraint(equalTo: trailingAnchor),
-            stackView.bottomAnchor.constraint(equalTo: bottomAnchor)
+            stackView.bottomAnchor.constraint(equalTo: bottomAnchor),
+            bannerImageView.heightAnchor.constraint(equalTo: heightAnchor, multiplier: 0.5)
         ])
     }
     
