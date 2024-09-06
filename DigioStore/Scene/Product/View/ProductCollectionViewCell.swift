@@ -12,14 +12,24 @@ final class ProductCollectionViewCell: UICollectionViewCell {
         String(describing: self)
     }
     
-    private lazy var bannerImageView: UIImageView = {
-       let imageView = UIImageView()
-        imageView.contentMode = .scaleAspectFit
-        imageView.layer.cornerRadius = 24
-        imageView.layer.masksToBounds = true
-        imageView.translatesAutoresizingMaskIntoConstraints = false
-        return imageView
+    private let bannerImageView: UIImageView = {
+        let imageView = UIImageView()
+         imageView.contentMode = .scaleAspectFit
+         imageView.translatesAutoresizingMaskIntoConstraints = false
+         return imageView
     }()
+
+    private let bannerView: UIView = {
+        let view = UIView()
+        view.layer.cornerRadius = 24
+        view.backgroundColor = .white
+        view.applyShadow(
+            shadowOffset: CGSize(width: 5, height: 5)
+        )
+        view.translatesAutoresizingMaskIntoConstraints = false
+        return view
+    }()
+    
 
     override init(frame: CGRect) {
         super.init(frame: frame)
@@ -35,21 +45,21 @@ final class ProductCollectionViewCell: UICollectionViewCell {
     }
 
     private func setupView() {
-        layer.cornerRadius = 24
-        layer.masksToBounds = true
-        backgroundColor = .white
-        
-        applyShadow()
-        
-      
-        addSubview(bannerImageView)
+        addSubview(bannerView)
+        bannerView.addSubview(bannerImageView)
         
         NSLayoutConstraint.activate([
-            bannerImageView.centerXAnchor.constraint(equalTo: centerXAnchor),
-            bannerImageView.centerYAnchor.constraint(equalTo: centerYAnchor),
+            bannerView.topAnchor.constraint(equalTo: topAnchor),
+            bannerView.leadingAnchor.constraint(equalTo: leadingAnchor),
+            bannerView.trailingAnchor.constraint(equalTo: trailingAnchor),
+            bannerView.bottomAnchor.constraint(equalTo: bottomAnchor)
+        ])
+        
+        NSLayoutConstraint.activate([
+            bannerImageView.centerYAnchor.constraint(equalTo: bannerView.centerYAnchor),
+            bannerImageView.centerXAnchor.constraint(equalTo: bannerView.centerXAnchor),
             bannerImageView.widthAnchor.constraint(equalToConstant: 72),
-            bannerImageView.heightAnchor.constraint(equalToConstant: 72),
-           
+            bannerImageView.heightAnchor.constraint(equalToConstant: 72)
         ])
     }
 }

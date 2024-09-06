@@ -16,7 +16,7 @@ final class SpotlightCollectionView: UICollectionView {
         let layout = UICollectionViewFlowLayout()
         layout.scrollDirection = .horizontal
         layout.minimumLineSpacing = 10
-        layout.sectionInset = UIEdgeInsets(top: 0, left: 4, bottom: 0, right: 16)
+        layout.sectionInset = UIEdgeInsets(top: 0, left: 8, bottom: 0, right: 16)
 
         self.viewModel = viewModel
         super.init(frame: .zero, collectionViewLayout: layout)

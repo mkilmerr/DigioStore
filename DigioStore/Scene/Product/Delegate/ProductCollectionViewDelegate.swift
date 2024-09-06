@@ -11,7 +11,7 @@ final class ProductCollectionViewDelegate: NSObject, UICollectionViewDelegate, U
     func collectionView(_ collectionView: UICollectionView,
                         layout collectionViewLayout: UICollectionViewLayout,
                         sizeForItemAt indexPath: IndexPath) -> CGSize {
-        CGSizeMake(collectionView.frame.size.width / 2, collectionView.frame.size.height / 2)
+        CGSizeMake(collectionView.frame.size.width / 2.5, collectionView.frame.size.height / 2)
     }
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
