@@ -45,6 +45,7 @@
 		4334A36F2C89EB0A005FE4E7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4334A36E2C89EB0A005FE4E7 /* AppDelegate.swift */; };
 		4334A3772C89EE53005FE4E7 /* .swiftlint.yml in Resources */ = {isa = PBXBuildFile; fileRef = 4334A3762C89EE53005FE4E7 /* .swiftlint.yml */; };
 		4335BEA52C8AA06A00A12A40 /* SpotlightCollectionViewDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4335BEA42C8AA06A00A12A40 /* SpotlightCollectionViewDataSource.swift */; };
+		4347C7AE2C8BB5E2007F682E /* StoreRemoteImageStub.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4347C7AD2C8BB5E2007F682E /* StoreRemoteImageStub.swift */; };
 		4370042B2C8B8C24007B8D44 /* UIImage+Remote.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4370042A2C8B8C24007B8D44 /* UIImage+Remote.swift */; };
 		4370042F2C8B97EE007B8D44 /* SpotlightViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4370042E2C8B97EE007B8D44 /* SpotlightViewModelTests.swift */; };
 /* End PBXBuildFile section */
@@ -101,6 +102,7 @@
 		4334A36E2C89EB0A005FE4E7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4334A3762C89EE53005FE4E7 /* .swiftlint.yml */ = {isa = PBXFileReference; lastKnownFileType = text.yaml; path = .swiftlint.yml; sourceTree = "<group>"; };
 		4335BEA42C8AA06A00A12A40 /* SpotlightCollectionViewDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpotlightCollectionViewDataSource.swift; sourceTree = "<group>"; };
+		4347C7AD2C8BB5E2007F682E /* StoreRemoteImageStub.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoreRemoteImageStub.swift; sourceTree = "<group>"; };
 		4370042A2C8B8C24007B8D44 /* UIImage+Remote.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage+Remote.swift"; sourceTree = "<group>"; };
 		4370042E2C8B97EE007B8D44 /* SpotlightViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpotlightViewModelTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -329,6 +331,7 @@
 			isa = PBXGroup;
 			children = (
 				432873082C8A337A00E73EF9 /* StoreNetworkServiceStub.swift */,
+				4347C7AD2C8BB5E2007F682E /* StoreRemoteImageStub.swift */,
 			);
 			path = Stub;
 			sourceTree = "<group>";
@@ -568,6 +571,7 @@
 				4370042F2C8B97EE007B8D44 /* SpotlightViewModelTests.swift in Sources */,
 				432873062C8A219600E73EF9 /* Store.swift in Sources */,
 				432872FD2C8A1DC100E73EF9 /* HomeViewModelTests.swift in Sources */,
+				4347C7AE2C8BB5E2007F682E /* StoreRemoteImageStub.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -85,15 +85,3 @@ extension SpotlightViewModelTests {
         return (sut, storeRemoteImageStub)
     }
 }
-
-final class StoreRemoteImageStub: StoreRemoteImageProtocol {
-    var serviceCalled = false
-    var failed = false
-
-    func request(
-        _ endpoint: StoreEndpoint,
-        completion: @escaping (Result<UIImage, StoreError>) -> Void) {
-        serviceCalled = true
-        failed ? completion(.failure(.unknown)) : completion(.success(UIImage()))
-    }
-}
