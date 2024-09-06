@@ -7,7 +7,8 @@
 
 import UIKit
 
-class HomeViewController: UIViewController {
+final class HomeViewController: UIViewController {
+    private let headerView = HomeHeaderView()
     private let spotlightCollectionView: SpotlightCollectionView = .make()
     private let cashBannerView: CashBannerView = .make()
     private let productsBannerView: CashBannerView = .make()
@@ -15,7 +16,7 @@ class HomeViewController: UIViewController {
 
     private lazy var contentStackView: UIStackView = {
         let stackView = UIStackView(
-            arrangedSubviews: [spotlightCollectionView, cashBannerView, productsBannerView]
+            arrangedSubviews: [headerView, spotlightCollectionView, cashBannerView, productsBannerView]
         )
         stackView.spacing = 24
         stackView.axis = .vertical
@@ -57,6 +58,7 @@ class HomeViewController: UIViewController {
 // MARK: - Setup View and Constraints
 extension HomeViewController {
     private func setupView() {
+        view.backgroundColor = .white
         view.addSubview(contentScrollView)
         contentScrollView.translatesAutoresizingMaskIntoConstraints = false
         contentScrollView.addSubview(contentStackView)

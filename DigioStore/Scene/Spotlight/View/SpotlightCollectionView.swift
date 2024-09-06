@@ -20,8 +20,7 @@ class SpotlightCollectionView: UICollectionView {
 
         self.viewModel = viewModel
         super.init(frame: .zero, collectionViewLayout: layout)
-        
-        self.backgroundColor = .red
+
         self.showsHorizontalScrollIndicator = false
         self.dataSource = collectionDataSource
         self.delegate = collectionDelegate
