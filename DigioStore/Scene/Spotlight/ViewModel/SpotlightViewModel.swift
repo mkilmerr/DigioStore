@@ -11,13 +11,8 @@ import UIKit
 protocol SpotlightViewModelProtocol {
     func loadSpotlightBannertItens(_ spotlights: [Spotlight])
     func createSpotlightBanner(from item: Spotlight, result: Result<UIImage, StoreError>) -> SpotlightBanner
-    var spotlightBanners: [SpotlightBanner]? { get }
-    var delegate: SpotlightViewModelDelegate? { get set }
-    var spotlights: [Spotlight] { get set }
-}
-
-protocol SpotlightViewModelDelegate: AnyObject {
-    func updateView()
+    var spotlightBanners: [SpotlightBanner] { get }
+    var onBannersLoaded: (() -> Void)? { get set }
 }
 
 struct SpotlightBanner {
@@ -27,15 +22,9 @@ struct SpotlightBanner {
 }
 
 final class SpotlightViewModel: SpotlightViewModelProtocol {
-    weak var delegate: SpotlightViewModelDelegate?
-    
-    var spotlights: [Spotlight] = [] {
-        didSet {
-            loadSpotlightBannertItens(spotlights)
-        }
-    }
+    var onBannersLoaded: (() -> Void)?
 
-    var spotlightBanners: [SpotlightBanner]?
+    var spotlightBanners: [SpotlightBanner] = []
     let service: StoreRemoteImageProtocol
 
     init(service: StoreRemoteImageProtocol) {
@@ -48,7 +37,11 @@ final class SpotlightViewModel: SpotlightViewModelProtocol {
                 DispatchQueue.main.async { [weak self] in
                     guard let self else { return }
                     let banner = createSpotlightBanner(from: spotlight, result: result)
-                    self.spotlightBanners?.append(banner)
+                    self.spotlightBanners.append(banner)
+                    
+                    if spotlights.count == spotlightBanners.count {
+                        self.onBannersLoaded?()
+                    }
                 }
             }
         }

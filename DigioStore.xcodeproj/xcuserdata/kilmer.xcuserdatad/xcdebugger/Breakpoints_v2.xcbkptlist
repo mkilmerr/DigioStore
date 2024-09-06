@@ -56,7 +56,7 @@
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
             uuid = "DF51B504-EB01-48C2-B1B6-A5964E0362D0"
-            shouldBeEnabled = "Yes"
+            shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "DigioStore/Scene/Home/View/HomeViewController.swift"
@@ -66,38 +66,6 @@
             endingLineNumber = "34"
             landmarkName = "viewDidLoad()"
             landmarkType = "7">
-            <Locations>
-               <Location
-                  uuid = "DF51B504-EB01-48C2-B1B6-A5964E0362D0 - 46f4f3217f95aa66"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "closure #1 (DigioStore.HomeViewModelState) -&gt; () in DigioStore.HomeViewController.viewDidLoad() -&gt; ()"
-                  moduleName = "DigioStore"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/kilmer/Desktop/DigioStore/DigioStore/Scene/Home/View/HomeViewController.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "34"
-                  endingLineNumber = "34"
-                  offsetFromSymbolStart = "508">
-               </Location>
-               <Location
-                  uuid = "DF51B504-EB01-48C2-B1B6-A5964E0362D0 - 46f4f3217f95aa66"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "closure #1 (DigioStore.HomeViewModelState) -&gt; () in DigioStore.HomeViewController.viewDidLoad() -&gt; ()"
-                  moduleName = "DigioStore"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/kilmer/Desktop/DigioStore/DigioStore/Scene/Home/View/HomeViewController.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "34"
-                  endingLineNumber = "34"
-                  offsetFromSymbolStart = "436">
-               </Location>
-            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -119,56 +87,8 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "A52ADEC7-7892-40B7-A79D-33829DCB04C8"
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "DigioStore/Scene/Spotlight/View/SpotlightCollectionView.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "41"
-            endingLineNumber = "41"
-            landmarkName = "loadView(with:)"
-            landmarkType = "7">
-            <Locations>
-               <Location
-                  uuid = "A52ADEC7-7892-40B7-A79D-33829DCB04C8 - e1d8343464e936e7"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "DigioStore.SpotlightCollectionView.loadView(with: Swift.Array&lt;DigioStore.Spotlight&gt;) -&gt; ()"
-                  moduleName = "DigioStore"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/kilmer/Desktop/DigioStore/DigioStore/Scene/Spotlight/View/SpotlightCollectionView.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "40"
-                  endingLineNumber = "40"
-                  offsetFromSymbolStart = "60">
-               </Location>
-               <Location
-                  uuid = "A52ADEC7-7892-40B7-A79D-33829DCB04C8 - ebf82cd0f57b6e97"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "closure #1 () -&gt; () in DigioStore.SpotlightCollectionView.loadView(with: Swift.Array&lt;DigioStore.Spotlight&gt;) -&gt; ()"
-                  moduleName = "DigioStore"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/kilmer/Desktop/DigioStore/DigioStore/Scene/Spotlight/View/SpotlightCollectionView.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "40"
-                  endingLineNumber = "40"
-                  offsetFromSymbolStart = "36">
-               </Location>
-            </Locations>
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
             uuid = "A8BD5360-895A-4A7F-A0D1-A4BD357EFB07"
-            shouldBeEnabled = "Yes"
+            shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "DigioStore/Scene/Home/View/HomeViewController.swift"
@@ -178,54 +98,163 @@
             endingLineNumber = "32"
             landmarkName = "viewDidLoad()"
             landmarkType = "7">
-            <Locations>
-               <Location
-                  uuid = "A8BD5360-895A-4A7F-A0D1-A4BD357EFB07 - 46f4f3217f95aa24"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "closure #1 (DigioStore.HomeViewModelState) -&gt; () in DigioStore.HomeViewController.viewDidLoad() -&gt; ()"
-                  moduleName = "DigioStore"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/kilmer/Desktop/DigioStore/DigioStore/Scene/Home/View/HomeViewController.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "32"
-                  endingLineNumber = "32"
-                  offsetFromSymbolStart = "392">
-               </Location>
-               <Location
-                  uuid = "A8BD5360-895A-4A7F-A0D1-A4BD357EFB07 - 46f4f3217f95aa24"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "closure #1 (DigioStore.HomeViewModelState) -&gt; () in DigioStore.HomeViewController.viewDidLoad() -&gt; ()"
-                  moduleName = "DigioStore"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/kilmer/Desktop/DigioStore/DigioStore/Scene/Home/View/HomeViewController.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "32"
-                  endingLineNumber = "32"
-                  offsetFromSymbolStart = "324">
-               </Location>
-            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "52088424-E6A8-4B3A-8E6D-623FAAFA7490"
-            shouldBeEnabled = "Yes"
+            uuid = "C29EDB45-D1B7-44F1-A29E-CAF97C5784C7"
+            shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "DigioStore/Scene/Spotlight/View/SpotlightCollectionView.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "62"
-            endingLineNumber = "62"
-            landmarkName = "updateView()"
+            startingLineNumber = "38"
+            endingLineNumber = "38"
+            landmarkName = "loadView(with:)"
             landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "A2BF8772-49AD-4EB9-BC9D-7BCEE9C7043C"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "DigioStore/Network/StoreRemoteImage.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "35"
+            endingLineNumber = "35"
+            landmarkName = "request(_:completion:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "8342BEB3-8570-4413-9773-14BD2BE7D7A7"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "DigioStore/Network/StoreRemoteImage.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "32"
+            endingLineNumber = "32"
+            landmarkName = "request(_:completion:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "6A287D93-4248-40AF-B8FE-A1A16D55979F"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "DigioStore/Scene/Spotlight/ViewModel/SpotlightViewModel.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "40"
+            endingLineNumber = "40"
+            landmarkName = "loadSpotlightBannertItens(_:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "71E97EE3-9186-45E7-A56D-244D092E64DE"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "DigioStore/Scene/Spotlight/View/SpotlightCollectionView.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "42"
+            endingLineNumber = "42"
+            landmarkName = "loadView(with:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "71E97EE3-9186-45E7-A56D-244D092E64DE - e1d8343464e9491c"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "DigioStore.SpotlightCollectionView.loadView(with: Swift.Array&lt;DigioStore.Spotlight&gt;) -&gt; ()"
+                  moduleName = "DigioStore"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/kilmer/Desktop/DigioStore/DigioStore/Scene/Spotlight/View/SpotlightCollectionView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "45"
+                  endingLineNumber = "45"
+                  offsetFromSymbolStart = "216">
+               </Location>
+               <Location
+                  uuid = "71E97EE3-9186-45E7-A56D-244D092E64DE - 167e6d72517f046f"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.Array&lt;DigioStore.SpotlightBanner&gt;) -&gt; () in DigioStore.SpotlightCollectionView.loadView(with: Swift.Array&lt;DigioStore.Spotlight&gt;) -&gt; ()"
+                  moduleName = "DigioStore"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/kilmer/Desktop/DigioStore/DigioStore/Scene/Spotlight/View/SpotlightCollectionView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "45"
+                  endingLineNumber = "45"
+                  offsetFromSymbolStart = "16">
+               </Location>
+               <Location
+                  uuid = "71E97EE3-9186-45E7-A56D-244D092E64DE - 167e6d72517f0408"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.Array&lt;DigioStore.SpotlightBanner&gt;) -&gt; () in DigioStore.SpotlightCollectionView.loadView(with: Swift.Array&lt;DigioStore.Spotlight&gt;) -&gt; ()"
+                  moduleName = "DigioStore"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/kilmer/Desktop/DigioStore/DigioStore/Scene/Spotlight/View/SpotlightCollectionView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "44"
+                  endingLineNumber = "44"
+                  offsetFromSymbolStart = "72">
+               </Location>
+               <Location
+                  uuid = "71E97EE3-9186-45E7-A56D-244D092E64DE - 167e6d72517f7bca"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.Array&lt;DigioStore.SpotlightBanner&gt;) -&gt; () in DigioStore.SpotlightCollectionView.loadView(with: Swift.Array&lt;DigioStore.Spotlight&gt;) -&gt; ()"
+                  moduleName = "DigioStore"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/kilmer/Desktop/DigioStore/DigioStore/Scene/Spotlight/View/SpotlightCollectionView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "42"
+                  endingLineNumber = "42"
+                  offsetFromSymbolStart = "72">
+               </Location>
+               <Location
+                  uuid = "71E97EE3-9186-45E7-A56D-244D092E64DE - ebf82cd0f57b6ec9"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 () -&gt; () in DigioStore.SpotlightCollectionView.loadView(with: Swift.Array&lt;DigioStore.Spotlight&gt;) -&gt; ()"
+                  moduleName = "DigioStore"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/kilmer/Desktop/DigioStore/DigioStore/Scene/Spotlight/View/SpotlightCollectionView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "42"
+                  endingLineNumber = "42"
+                  offsetFromSymbolStart = "44">
+               </Location>
+            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>

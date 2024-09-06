@@ -20,8 +20,6 @@ class SpotlightCollectionView: UICollectionView {
         self.viewModel = viewModel
         super.init(frame: .zero, collectionViewLayout: layout)
         
-        self.viewModel.delegate = self
-
         self.backgroundColor = .red
         self.showsHorizontalScrollIndicator = false
         self.dataSource = self
@@ -37,14 +35,18 @@ class SpotlightCollectionView: UICollectionView {
         fatalError("init(coder:) has not been implemented")
     }
 
-    public func loadView(with spotlights: [Spotlight]) {
+    public func loadBanners(with spotlights: [Spotlight]) {
+        viewModel.loadSpotlightBannertItens(spotlights)
         
+        viewModel.onBannersLoaded = { [weak self] in 
+            self?.reloadData()
+        }
     }
 }
 
 extension SpotlightCollectionView: UICollectionViewDelegate, UICollectionViewDataSource {
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return 12
+        viewModel.spotlightBanners.count
     }
 
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
@@ -54,11 +56,5 @@ extension SpotlightCollectionView: UICollectionViewDelegate, UICollectionViewDat
 
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
 
-    }
-}
-
-extension SpotlightCollectionView: SpotlightViewModelDelegate {
-    func updateView() {
-        reloadData()
     }
 }

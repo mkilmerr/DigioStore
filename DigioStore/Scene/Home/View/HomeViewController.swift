@@ -29,9 +29,9 @@ class HomeViewController: UIViewController {
             switch state {
             case .loading: break
             case .success(let store):
-                spotlightCollectionView.loadView(with: store.spotlight)
+                spotlightCollectionView.loadBanners(with: store.spotlight)
             case .error(let error):
-                spotlightCollectionView.loadView(with: [])
+                spotlightCollectionView.loadBanners(with: [])
             }
         }
 
