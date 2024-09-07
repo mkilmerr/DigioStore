@@ -17,7 +17,6 @@ extension UIImage {
         case .failure:
             image = UIImage(named: "mainIcon")
         }
-        
         return image
     }
 }

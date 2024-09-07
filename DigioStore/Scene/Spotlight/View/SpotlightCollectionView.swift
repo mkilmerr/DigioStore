@@ -34,7 +34,7 @@ final class SpotlightCollectionView: UICollectionView {
             SpotlightCollectionViewCell.self,
             forCellWithReuseIdentifier: SpotlightCollectionViewCell.reuseIdentifier
         )
-        
+
         self.collectionDelegate.onTapItem = { [weak self] banner in
             self?.delegateView?.goToDetail(with: banner)
         }
@@ -46,7 +46,7 @@ final class SpotlightCollectionView: UICollectionView {
 
     public func loadBanners(with spotlights: [Spotlight]) {
         viewModel.loadSpotlightBannertItens(spotlights)
-        
+
         viewModel.onBannersLoaded = { [weak self] in
             guard let self else { return }
             collectionDataSource.spotlightBanners = self.viewModel.spotlightBanners

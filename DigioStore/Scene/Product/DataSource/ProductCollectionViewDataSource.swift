@@ -17,12 +17,11 @@ final class ProductCollectionViewDataSource: NSObject, UICollectionViewDataSourc
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         productBanners.count
     }
-    
+
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: ProductCollectionViewCell.reuseIdentifier, for: indexPath) as? ProductCollectionViewCell else { return UICollectionViewCell() }
-        
+
         cell.setup(with: productBanners[indexPath.row])
         return cell
     }
 }
-

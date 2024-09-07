@@ -16,7 +16,7 @@ final class ProductCollectionView: UICollectionView {
     var viewModel: ProductViewModelProtocol
     let collectionDataSource: ProductCollectionViewDataSource = .init(productBanners: [])
     let collectionDelegate = ProductCollectionViewDelegate()
-    
+
     init(viewModel: ProductViewModelProtocol) {
         let layout = UICollectionViewFlowLayout()
         layout.scrollDirection = .horizontal
@@ -35,19 +35,19 @@ final class ProductCollectionView: UICollectionView {
             ProductCollectionViewCell.self,
             forCellWithReuseIdentifier: ProductCollectionViewCell.reuseIdentifier
         )
-        
+
         self.collectionDelegate.onTapItem = { [weak self] banner in
             self?.delegateView?.goToDetail(with: banner)
         }
     }
-    
+
     required init?(coder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
-    
+
     public func loadProductBanner(with product: [Product]) {
         viewModel.loadProductBannerItens(product)
-        
+
         viewModel.onBannersLoaded = { [weak self] in
             guard let self else { return }
             self.collectionDataSource.productBanners = self.viewModel.productBanners

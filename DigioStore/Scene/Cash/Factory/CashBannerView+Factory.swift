@@ -11,7 +11,6 @@ extension CashBannerView {
     static func make() -> CashBannerView {
         let service = StoreRemoteImage()
         let viewModel = CashViewModel(service: service)
-        
         return .init(viewModel: viewModel)
     }
 }

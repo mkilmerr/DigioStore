@@ -11,7 +11,7 @@ final class SpotlightCollectionViewCell: UICollectionViewCell {
     static var reuseIdentifier: String {
         String(describing: self)
     }
-    
+
     private lazy var bannerImageView: UIImageView = {
        let imageView = UIImageView()
         imageView.contentMode = .scaleToFill
@@ -29,7 +29,7 @@ final class SpotlightCollectionViewCell: UICollectionViewCell {
     required init?(coder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
-    
+
     public func setup(with banner: SpotlightBanner) {
         bannerImageView.image = banner.image
     }
@@ -38,9 +38,9 @@ final class SpotlightCollectionViewCell: UICollectionViewCell {
         layer.cornerRadius = 24
         layer.masksToBounds = true
         applyShadow()
-        
+
         addSubview(bannerImageView)
-        
+
         NSLayoutConstraint.activate([
             bannerImageView.topAnchor.constraint(equalTo: topAnchor, constant: 24),
             bannerImageView.leadingAnchor.constraint(equalTo: leadingAnchor),

@@ -38,7 +38,7 @@ final class SpotlightViewModel: SpotlightViewModelProtocol {
                     guard let self else { return }
                     let banner = createSpotlightBanner(from: spotlight, result: result)
                     self.spotlightBanners.append(banner)
-                    
+
                     if spotlights.count == spotlightBanners.count {
                         self.onBannersLoaded?()
                     }

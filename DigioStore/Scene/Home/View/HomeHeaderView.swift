@@ -15,7 +15,7 @@ final class HomeHeaderView: UIView {
         imageView.contentMode = .scaleAspectFit
         return imageView
     }()
-    
+
     private let headerLabel: UILabel = {
        let label = UILabel()
         label.text = "Olá, Maria"
@@ -23,7 +23,7 @@ final class HomeHeaderView: UIView {
         label.font = .boldSystemFont(ofSize: 15)
         return label
     }()
-    
+
     private lazy var stackView: UIStackView = {
         let stackView = UIStackView(
             arrangedSubviews: [headerImageView, headerLabel]
@@ -33,25 +33,24 @@ final class HomeHeaderView: UIView {
         stackView.translatesAutoresizingMaskIntoConstraints = false
         return stackView
     }()
-    
+
     init() {
         super.init(frame: .zero)
         self.setupView()
     }
-    
+
     required init?(coder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
-    
+
     private func setupView() {
         addSubview(stackView)
-        
+
         NSLayoutConstraint.activate([
             stackView.topAnchor.constraint(equalTo: topAnchor),
             stackView.leadingAnchor.constraint(equalTo: leadingAnchor, constant: 16),
             stackView.trailingAnchor.constraint(equalTo: trailingAnchor),
             stackView.bottomAnchor.constraint(equalTo: bottomAnchor),
-            
             headerImageView.widthAnchor.constraint(equalToConstant: 32),
             headerImageView.heightAnchor.constraint(equalToConstant: 32)
         ])

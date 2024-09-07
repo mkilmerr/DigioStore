@@ -16,6 +16,10 @@ final class StoreRemoteImageStub: StoreRemoteImageProtocol {
         _ endpoint: StoreEndpoint,
         completion: @escaping (Result<UIImage, StoreError>) -> Void) {
         serviceCalled = true
-        failed ? completion(.failure(.unknown)) : completion(.success(UIImage()))
-    }
+            if failed {
+                completion(.failure(.unknown))
+            } else {
+                completion(.success(UIImage()))
+            }
+        }
 }

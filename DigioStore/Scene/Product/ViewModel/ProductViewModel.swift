@@ -32,7 +32,7 @@ final class ProductViewModel: ProductViewModelProtocol {
     init(service: StoreRemoteImageProtocol) {
         self.service = service
     }
-    
+
     func loadProductBannerItens(_ products: [Product]) {
         products.forEach { product in
             service.request(.getRemoteImage(product.imageURL)) { result in
@@ -40,7 +40,7 @@ final class ProductViewModel: ProductViewModelProtocol {
                     guard let self else { return }
                     let banner = createProductBanner(from: product, result: result)
                     self.productBanners.append(banner)
-                    
+
                     if products.count == productBanners.count {
                         self.onBannersLoaded?()
                     }
@@ -48,7 +48,7 @@ final class ProductViewModel: ProductViewModelProtocol {
             }
         }
     }
-    
+
     func createProductBanner(
         from item: Product,
         result: Result<UIImage, StoreError>

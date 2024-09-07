@@ -11,7 +11,7 @@ final class ProductCollectionViewCell: UICollectionViewCell {
     static var reuseIdentifier: String {
         String(describing: self)
     }
-    
+
     private let bannerImageView: UIImageView = {
         let imageView = UIImageView()
          imageView.contentMode = .scaleAspectFit
@@ -29,7 +29,6 @@ final class ProductCollectionViewCell: UICollectionViewCell {
         view.translatesAutoresizingMaskIntoConstraints = false
         return view
     }()
-    
 
     override init(frame: CGRect) {
         super.init(frame: frame)
@@ -39,7 +38,7 @@ final class ProductCollectionViewCell: UICollectionViewCell {
     required init?(coder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
-    
+
     public func setup(with banner: ProductBanner) {
         bannerImageView.image = banner.image
     }
@@ -47,14 +46,14 @@ final class ProductCollectionViewCell: UICollectionViewCell {
     private func setupView() {
         addSubview(bannerView)
         bannerView.addSubview(bannerImageView)
-        
+
         NSLayoutConstraint.activate([
             bannerView.topAnchor.constraint(equalTo: topAnchor),
             bannerView.leadingAnchor.constraint(equalTo: leadingAnchor),
             bannerView.trailingAnchor.constraint(equalTo: trailingAnchor),
             bannerView.bottomAnchor.constraint(equalTo: bottomAnchor)
         ])
-        
+
         NSLayoutConstraint.activate([
             bannerImageView.centerYAnchor.constraint(equalTo: bannerView.centerYAnchor),
             bannerImageView.centerXAnchor.constraint(equalTo: bannerView.centerXAnchor),
@@ -63,4 +62,3 @@ final class ProductCollectionViewCell: UICollectionViewCell {
         ])
     }
 }
-

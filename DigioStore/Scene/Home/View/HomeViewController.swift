@@ -39,7 +39,7 @@ final class HomeViewController: UIViewController {
         stackView.translatesAutoresizingMaskIntoConstraints = false
         return stackView
     }()
-    
+
     private lazy var alertController: UIAlertController = {
         let alertController = UIAlertController(
             title: "Ops....",
@@ -50,13 +50,13 @@ final class HomeViewController: UIViewController {
         let okAction = UIAlertAction(title: "OK", style: .default) { [weak self] _ in
             self?.fetchStore()
         }
-        
+
         let cancelAction = UIAlertAction(
             title: "Cancelar",
             style: .cancel,
             handler: nil
         )
-        
+
         alertController.addAction(okAction)
         alertController.addAction(cancelAction)
 
@@ -126,7 +126,7 @@ extension HomeViewController {
         view.addSubview(activityIndicator)
         activityIndicator.startAnimating()
         contentStackView.isHidden = true
-      
+
         NSLayoutConstraint.activate([
             activityIndicator.centerXAnchor.constraint(
                 equalTo: view.centerXAnchor
@@ -136,7 +136,7 @@ extension HomeViewController {
             )
         ])
     }
-    
+
     private func stopLoading() {
         activityIndicator.stopAnimating()
         activityIndicator.removeFromSuperview()
@@ -151,13 +151,13 @@ extension HomeViewController {
         contentScrollView.translatesAutoresizingMaskIntoConstraints = false
         contentScrollView.addSubview(contentStackView)
     }
-    
+
     private func setupConstraints() {
         setupContentScrollConstraints()
         setupContentStackConstraints()
         setupBannersConstraints()
     }
-    
+
     private func setupContentScrollConstraints() {
         NSLayoutConstraint.activate([
             contentScrollView.topAnchor.constraint(
@@ -174,7 +174,7 @@ extension HomeViewController {
             )
         ])
     }
-    
+
     private func setupContentStackConstraints() {
         NSLayoutConstraint.activate([
             contentStackView.leadingAnchor.constraint(
@@ -195,7 +195,7 @@ extension HomeViewController {
             )
         ])
     }
-    
+
     private func setupBannersConstraints() {
         NSLayoutConstraint.activate([
             spotlightCollectionView.heightAnchor.constraint(

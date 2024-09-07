@@ -14,14 +14,14 @@ final class SpotlightDetailViewController: UIViewController {
         imageView.layer.masksToBounds = true
         return imageView
     }()
-    
+
     private let nameLabel: UILabel = {
        let label = UILabel()
         label.textColor = .black
         label.font = .boldSystemFont(ofSize: 25)
         return label
     }()
-    
+
     private let descriptionLabel: UILabel = {
        let label = UILabel()
         label.numberOfLines = 0
@@ -29,8 +29,7 @@ final class SpotlightDetailViewController: UIViewController {
         label.textColor = .black
         return label
     }()
-    
-    
+
     private lazy var contentStackView: UIStackView = {
         let stackView = UIStackView(arrangedSubviews: [
             imageView,
@@ -42,7 +41,7 @@ final class SpotlightDetailViewController: UIViewController {
         stackView.translatesAutoresizingMaskIntoConstraints = false
         return stackView
     }()
-    
+
     let sportlight: SpotlightBanner
 
     init(sportlight: SpotlightBanner) {
@@ -50,7 +49,7 @@ final class SpotlightDetailViewController: UIViewController {
         super.init(nibName: nil, bundle: nil)
         self.setupView(with: sportlight)
     }
-    
+
     required init?(coder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
@@ -59,11 +58,11 @@ final class SpotlightDetailViewController: UIViewController {
         super.viewDidLoad()
         setupView()
     }
-    
+
     private func setupView() {
         view.backgroundColor = .accentColor
         view.addSubview(contentStackView)
-    
+
         NSLayoutConstraint.activate([
             contentStackView.topAnchor.constraint(
                 equalTo: view.safeAreaLayoutGuide.topAnchor,
@@ -83,7 +82,7 @@ final class SpotlightDetailViewController: UIViewController {
             )
         ])
     }
-    
+
     private func setupView(with spolight: SpotlightBanner) {
         nameLabel.text = spolight.name
         descriptionLabel.text = spolight.description

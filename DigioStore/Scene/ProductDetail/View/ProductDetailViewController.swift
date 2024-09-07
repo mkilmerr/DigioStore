@@ -15,14 +15,14 @@ final class ProductDetailViewController: UIViewController {
         imageView.layer.masksToBounds = true
         return imageView
     }()
-    
+
     private let nameLabel: UILabel = {
        let label = UILabel()
         label.textColor = .black
         label.font = .boldSystemFont(ofSize: 30)
         return label
     }()
-    
+
     private let descriptionLabel: UILabel = {
        let label = UILabel()
         label.numberOfLines = 0
@@ -30,8 +30,7 @@ final class ProductDetailViewController: UIViewController {
         label.textColor = .black
         return label
     }()
-    
-    
+
     private lazy var contentStackView: UIStackView = {
         let stackView = UIStackView(arrangedSubviews: [
             nameLabel,
@@ -43,7 +42,7 @@ final class ProductDetailViewController: UIViewController {
         stackView.translatesAutoresizingMaskIntoConstraints = false
         return stackView
     }()
-    
+
     let product: ProductBanner
 
     init(product: ProductBanner) {
@@ -51,7 +50,7 @@ final class ProductDetailViewController: UIViewController {
         super.init(nibName: nil, bundle: nil)
         self.setupView(with: product)
     }
-    
+
     required init?(coder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
@@ -60,11 +59,11 @@ final class ProductDetailViewController: UIViewController {
         super.viewDidLoad()
         setupView()
     }
-    
+
     private func setupView() {
         view.backgroundColor = .accentColor
         view.addSubview(contentStackView)
-    
+
         NSLayoutConstraint.activate([
             contentStackView.topAnchor.constraint(
                 equalTo: view.safeAreaLayoutGuide.topAnchor,
@@ -83,7 +82,7 @@ final class ProductDetailViewController: UIViewController {
             )
         ])
     }
-    
+
     private func setupView(with product: ProductBanner) {
         nameLabel.text = product.name
         descriptionLabel.text = product.description

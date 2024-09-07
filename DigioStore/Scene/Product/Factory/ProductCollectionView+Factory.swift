@@ -12,7 +12,6 @@ extension ProductCollectionView {
         let service = StoreRemoteImage()
         let viewModel = ProductViewModel(service: service)
         let view = ProductCollectionView(viewModel: viewModel)
-        
         return view
     }
 }

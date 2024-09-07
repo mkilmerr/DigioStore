@@ -18,9 +18,9 @@ final class CashViewModelTests: XCTestCase {
     func test_loadCashBanner() {
         let (sut, _) = makeSUT()
         let cash: Cash = .fixture()
-        
+
         sut.loadCashBanner(from: cash)
-        
+
         sut.onBannerLoaded = { banner in
             XCTAssertEqual(cash.description, banner.description)
             XCTAssertEqual(cash.title, banner.title)
@@ -50,9 +50,9 @@ final class CashViewModelTests: XCTestCase {
     func test_createCashBanner_resultFailure() {
         let (sut, _) = makeSUT()
         let resultFailure: Result<UIImage, StoreError> = .failure(.unknown)
-        
+
         let cash: Cash = .fixture()
-        
+
         let banner = sut.createCashBanner(
             from: cash,
             result: resultFailure

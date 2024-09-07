@@ -16,7 +16,7 @@ final class ProductHeaderView: UIView {
         imageView.contentMode = .scaleAspectFit
         return imageView
     }()
-    
+
     private let headerLabel: UILabel = {
        let label = UILabel()
         label.text = "Produtos"
@@ -24,7 +24,7 @@ final class ProductHeaderView: UIView {
         label.font = .boldSystemFont(ofSize: 20)
         return label
     }()
-    
+
     private lazy var stackView: UIStackView = {
         let stackView = UIStackView(
             arrangedSubviews: [headerLabel]
@@ -33,19 +33,19 @@ final class ProductHeaderView: UIView {
         stackView.translatesAutoresizingMaskIntoConstraints = false
         return stackView
     }()
-    
+
     init() {
         super.init(frame: .zero)
         self.setupView()
     }
-    
+
     required init?(coder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
-    
+
     private func setupView() {
         addSubview(stackView)
-        
+
         NSLayoutConstraint.activate([
             stackView.topAnchor.constraint(equalTo: topAnchor),
             stackView.leadingAnchor.constraint(equalTo: leadingAnchor, constant: 8),
