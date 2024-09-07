@@ -26,7 +26,7 @@ final class ProductDetailViewController: UIViewController {
     private let descriptionLabel: UILabel = {
        let label = UILabel()
         label.numberOfLines = 0
-        label.lineBreakMode = .byCharWrapping
+        label.lineBreakMode = .byWordWrapping
         label.textColor = .black
         return label
     }()
