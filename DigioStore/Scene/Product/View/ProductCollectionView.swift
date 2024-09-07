@@ -24,6 +24,7 @@ final class ProductCollectionView: UICollectionView {
         self.showsHorizontalScrollIndicator = false
         self.dataSource = collectionDataSource
         self.delegate = collectionDelegate
+        self.backgroundColor = .accentColor
 
         self.register(
             ProductCollectionViewCell.self,

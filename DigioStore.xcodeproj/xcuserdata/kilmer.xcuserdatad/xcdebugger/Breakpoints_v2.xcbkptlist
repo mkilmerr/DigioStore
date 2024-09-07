@@ -692,7 +692,7 @@
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
             uuid = "435FF318-1D44-458F-8A88-89438A5FC250"
-            shouldBeEnabled = "Yes"
+            shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "DigioStore/Scene/Home/View/HomeViewController.swift"

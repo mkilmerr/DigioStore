@@ -22,13 +22,13 @@ final class SpotlightCollectionView: UICollectionView {
         layout.scrollDirection = .horizontal
         layout.minimumLineSpacing = 10
         layout.sectionInset = UIEdgeInsets(top: 0, left: 8, bottom: 0, right: 16)
-
         self.viewModel = viewModel
         super.init(frame: .zero, collectionViewLayout: layout)
 
         self.showsHorizontalScrollIndicator = false
         self.dataSource = collectionDataSource
         self.delegate = collectionDelegate
+        self.backgroundColor = .accentColor
 
         self.register(
             SpotlightCollectionViewCell.self,
