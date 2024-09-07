@@ -9,6 +9,11 @@ import Foundation
 import UIKit
 
 final class SpotlightCollectionViewDelegate: NSObject, UICollectionViewDelegate, UICollectionViewDelegateFlowLayout {
+    
+    var spotlightBanners: [SpotlightBanner] = []
+    
+    var onTapItem: ((SpotlightBanner) -> Void)?
+
     func collectionView(_ collectionView: UICollectionView,
                         layout collectionViewLayout: UICollectionViewLayout,
                         sizeForItemAt indexPath: IndexPath) -> CGSize {
@@ -16,6 +21,6 @@ final class SpotlightCollectionViewDelegate: NSObject, UICollectionViewDelegate,
     }
 
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-
+        onTapItem?(spotlightBanners[indexPath.row])
     }
 }

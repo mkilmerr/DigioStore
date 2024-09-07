@@ -7,10 +7,15 @@
 
 import UIKit
 
+protocol SpotlightCollectionActionDelegate: AnyObject {
+    func goToDetail(with spotlight: SpotlightBanner)
+}
+
 final class SpotlightCollectionView: UICollectionView {
-    var viewModel: SpotlightViewModelProtocol
-    var collectionDataSource: SpotlightCollectionViewDataSource = .init(spotlightBanners: [])
-    var collectionDelegate = SpotlightCollectionViewDelegate()
+    weak var delegateView: SpotlightCollectionActionDelegate?
+    private var viewModel: SpotlightViewModelProtocol
+    private let collectionDataSource: SpotlightCollectionViewDataSource = .init(spotlightBanners: [])
+    private let collectionDelegate = SpotlightCollectionViewDelegate()
 
     init(viewModel: SpotlightViewModelProtocol) {
         let layout = UICollectionViewFlowLayout()
@@ -29,6 +34,10 @@ final class SpotlightCollectionView: UICollectionView {
             SpotlightCollectionViewCell.self,
             forCellWithReuseIdentifier: SpotlightCollectionViewCell.reuseIdentifier
         )
+        
+        self.collectionDelegate.onTapItem = { [weak self] banner in
+            self?.delegateView?.goToDetail(with: banner)
+        }
     }
 
     required init?(coder: NSCoder) {
@@ -41,6 +50,7 @@ final class SpotlightCollectionView: UICollectionView {
         viewModel.onBannersLoaded = { [weak self] in
             guard let self else { return }
             collectionDataSource.spotlightBanners = self.viewModel.spotlightBanners
+            collectionDelegate.spotlightBanners = self.viewModel.spotlightBanners
             self.reloadData()
         }
     }

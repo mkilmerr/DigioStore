@@ -7,14 +7,14 @@
 
 import UIKit
 
+protocol SpotlightNavigation {
+    func goToSpotlightDetail(with spotlight: SpotlightBanner)
+}
+
 protocol HomeCoordinatorProtocol: Coordinator, SpotlightNavigation {}
 
 class HomeCoordinator: HomeCoordinatorProtocol {
-    var parentCoordinator: Coordinator?
-    
-    var childrenCoordinators: [Coordinator] = []
-    
-    var navigationController: UINavigationController
+    var navigationController: UINavigationController?
     
     init(navigationController : UINavigationController) {
         self.navigationController = navigationController
@@ -22,25 +22,21 @@ class HomeCoordinator: HomeCoordinatorProtocol {
     
     func start() {
         let viewController = HomeViewController.make(with: self)
-        navigationController.pushViewController(viewController, animated: true)
+        navigationController?.pushViewController(viewController, animated: true)
     }
     
-    func addChildCoordinator(_ child: Coordinator) {
-        childrenCoordinators.append(child)
-    }
+    func goToSpotlightDetail(with spotlight: SpotlightBanner) {
+        let spotlightDetailViewController = SpotlightDetailViewController(
+            sportlight: spotlight
+        )
     
-    func removeChildCoordinator(_ child: Coordinator) {
-        //childrenCoordinators = childrenCoordinators.filter { $0 !== child }
-    }
-    
-    func goToSpotlightDetail(with spotlight: Spotlight) {
-        let spotlightDetailViewController = UIViewController()
-        let spotlightCoordinator = SpotlightCoordinator(navigationController: self.navigationController)
-        addChildCoordinator(spotlightCoordinator)
-        spotlightCoordinator.start()
+        navigationController?.pushViewController(
+            spotlightDetailViewController,
+            animated: true
+        )
     }
     
     func goBackSpotlight() {
-        navigationController.popViewController(animated: true)
+        navigationController?.popViewController(animated: true)
     }
 }

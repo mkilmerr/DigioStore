@@ -81,6 +81,7 @@ final class HomeViewController: UIViewController {
         setupView()
         setupConstraints()
         fetchStore()
+        spotlightCollectionView.delegateView = self
     }
 }
 
@@ -206,5 +207,12 @@ extension HomeViewController {
                equalToConstant: 200
             )
         ])
+    }
+}
+
+// MARK: - SpotlightCollectionActionDelegate
+extension HomeViewController: SpotlightCollectionActionDelegate {
+    func goToDetail(with spotlight: SpotlightBanner) {
+        coordinator.goToSpotlightDetail(with: spotlight)
     }
 }

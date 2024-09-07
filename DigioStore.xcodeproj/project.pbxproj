@@ -54,7 +54,7 @@
 		43DCAFDF2C8CA76000652CE9 /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43DCAFDE2C8CA76000652CE9 /* Coordinator.swift */; };
 		43DCAFE22C8CA7C700652CE9 /* HomeCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43DCAFE12C8CA7C700652CE9 /* HomeCoordinator.swift */; };
 		43DCAFE52C8CAA5800652CE9 /* HomeViewController+Factory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43DCAFE42C8CAA5800652CE9 /* HomeViewController+Factory.swift */; };
-		43DCAFE82C8CAE2C00652CE9 /* SpotlightCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43DCAFE72C8CAE2C00652CE9 /* SpotlightCoordinator.swift */; };
+		43DCAFEC2C8CB8C800652CE9 /* SpotlightDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43DCAFEB2C8CB8C800652CE9 /* SpotlightDetailViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -118,7 +118,7 @@
 		43DCAFDE2C8CA76000652CE9 /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
 		43DCAFE12C8CA7C700652CE9 /* HomeCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeCoordinator.swift; sourceTree = "<group>"; };
 		43DCAFE42C8CAA5800652CE9 /* HomeViewController+Factory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "HomeViewController+Factory.swift"; sourceTree = "<group>"; };
-		43DCAFE72C8CAE2C00652CE9 /* SpotlightCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpotlightCoordinator.swift; sourceTree = "<group>"; };
+		43DCAFEB2C8CB8C800652CE9 /* SpotlightDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpotlightDetailViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -260,6 +260,7 @@
 		432872DC2C89FCB400E73EF9 /* Scene */ = {
 			isa = PBXGroup;
 			children = (
+				43DCAFE92C8CB8A200652CE9 /* SpotlightDetail */,
 				432872DD2C89FCDD00E73EF9 /* Home */,
 				432873122C8A437300E73EF9 /* Spotlight */,
 				4315ACE32C8AA518008AB238 /* Cash */,
@@ -362,7 +363,6 @@
 				4315ACE02C8AA399008AB238 /* Delegate */,
 				4335BEA32C8AA05300A12A40 /* DataSource */,
 				4328731D2C8A54F400E73EF9 /* Factory */,
-				43DCAFE62C8CAE1400652CE9 /* Coordinator */,
 				4328731A2C8A4A4400E73EF9 /* ViewModel */,
 				432873192C8A4A3B00E73EF9 /* View */,
 			);
@@ -492,12 +492,20 @@
 			path = Factory;
 			sourceTree = "<group>";
 		};
-		43DCAFE62C8CAE1400652CE9 /* Coordinator */ = {
+		43DCAFE92C8CB8A200652CE9 /* SpotlightDetail */ = {
 			isa = PBXGroup;
 			children = (
-				43DCAFE72C8CAE2C00652CE9 /* SpotlightCoordinator.swift */,
+				43DCAFEA2C8CB8AF00652CE9 /* View */,
 			);
-			path = Coordinator;
+			path = SpotlightDetail;
+			sourceTree = "<group>";
+		};
+		43DCAFEA2C8CB8AF00652CE9 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				43DCAFEB2C8CB8C800652CE9 /* SpotlightDetailViewController.swift */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -653,6 +661,7 @@
 				4315AD032C8ACEED008AB238 /* ProductCollectionViewDataSource.swift in Sources */,
 				43DCAFDF2C8CA76000652CE9 /* Coordinator.swift in Sources */,
 				4335BEA52C8AA06A00A12A40 /* SpotlightCollectionViewDataSource.swift in Sources */,
+				43DCAFEC2C8CB8C800652CE9 /* SpotlightDetailViewController.swift in Sources */,
 				43DCAFE22C8CA7C700652CE9 /* HomeCoordinator.swift in Sources */,
 				4328731F2C8A550400E73EF9 /* SpotlightCollectionView+Factory.swift in Sources */,
 				4315ACEC2C8AAAD9008AB238 /* CashBannerView+Factory.swift in Sources */,
@@ -668,7 +677,6 @@
 				432873162C8A451B00E73EF9 /* StoreRemoteImage.swift in Sources */,
 				432873112C8A432500E73EF9 /* SpotlightCollectionViewCell.swift in Sources */,
 				4328731C2C8A4A5D00E73EF9 /* SpotlightViewModel.swift in Sources */,
-				43DCAFE82C8CAE2C00652CE9 /* SpotlightCoordinator.swift in Sources */,
 				4315AD052C8ACFC9008AB238 /* ProductCollectionViewCell.swift in Sources */,
 				43DCAFE52C8CAA5800652CE9 /* HomeViewController+Factory.swift in Sources */,
 				4315AD012C8ACE23008AB238 /* ProductCollectionViewDelegate.swift in Sources */,
