@@ -25,11 +25,28 @@ xcode-select --install
 sudo xcode-select -s /Applications/Xcode.app/Contents/Developer
 ```
 
+#### 3. Aceitar os termos de licença do Xcode
+
+```swift
+sudo xcodebuild -license
+```
+
+#### 5. Reinicie o terminal
+
 ### 🔸 Fastlane 🔸
 
 - Instale o [Homebrew](https://brew.sh)
-- Vá para a raiz do projeto e rode a lane para baixar o Swiftlint
+- Vá para a raiz do projeto
+- Rode as lanes
+
+#### Lanes
+##### Baixa o SwiftLint
 ```swift
 fastlane install_swiftlint
+```
+##### Roda os testes unitários
+
+```swift
+fastlane unit_tests
 ```
 
