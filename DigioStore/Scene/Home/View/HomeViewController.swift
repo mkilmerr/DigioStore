@@ -64,9 +64,11 @@ final class HomeViewController: UIViewController {
     }()
 
     let viewModel: HomeViewModelProtocol
+    let coordinator: Coordinator
 
-    init(viewModel: HomeViewModelProtocol) {
+    init(viewModel: HomeViewModelProtocol, coordinator: Coordinator) {
         self.viewModel = viewModel
+        self.coordinator = coordinator
         super.init(nibName: nil, bundle: nil)
     }
 

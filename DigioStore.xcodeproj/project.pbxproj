@@ -54,6 +54,7 @@
 		43DCAFDF2C8CA76000652CE9 /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43DCAFDE2C8CA76000652CE9 /* Coordinator.swift */; };
 		43DCAFE22C8CA7C700652CE9 /* HomeCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43DCAFE12C8CA7C700652CE9 /* HomeCoordinator.swift */; };
 		43DCAFE52C8CAA5800652CE9 /* HomeViewController+Factory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43DCAFE42C8CAA5800652CE9 /* HomeViewController+Factory.swift */; };
+		43DCAFE82C8CAE2C00652CE9 /* SpotlightCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43DCAFE72C8CAE2C00652CE9 /* SpotlightCoordinator.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -117,6 +118,7 @@
 		43DCAFDE2C8CA76000652CE9 /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
 		43DCAFE12C8CA7C700652CE9 /* HomeCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeCoordinator.swift; sourceTree = "<group>"; };
 		43DCAFE42C8CAA5800652CE9 /* HomeViewController+Factory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "HomeViewController+Factory.swift"; sourceTree = "<group>"; };
+		43DCAFE72C8CAE2C00652CE9 /* SpotlightCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpotlightCoordinator.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -360,6 +362,7 @@
 				4315ACE02C8AA399008AB238 /* Delegate */,
 				4335BEA32C8AA05300A12A40 /* DataSource */,
 				4328731D2C8A54F400E73EF9 /* Factory */,
+				43DCAFE62C8CAE1400652CE9 /* Coordinator */,
 				4328731A2C8A4A4400E73EF9 /* ViewModel */,
 				432873192C8A4A3B00E73EF9 /* View */,
 			);
@@ -487,6 +490,14 @@
 				43DCAFE42C8CAA5800652CE9 /* HomeViewController+Factory.swift */,
 			);
 			path = Factory;
+			sourceTree = "<group>";
+		};
+		43DCAFE62C8CAE1400652CE9 /* Coordinator */ = {
+			isa = PBXGroup;
+			children = (
+				43DCAFE72C8CAE2C00652CE9 /* SpotlightCoordinator.swift */,
+			);
+			path = Coordinator;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -657,6 +668,7 @@
 				432873162C8A451B00E73EF9 /* StoreRemoteImage.swift in Sources */,
 				432873112C8A432500E73EF9 /* SpotlightCollectionViewCell.swift in Sources */,
 				4328731C2C8A4A5D00E73EF9 /* SpotlightViewModel.swift in Sources */,
+				43DCAFE82C8CAE2C00652CE9 /* SpotlightCoordinator.swift in Sources */,
 				4315AD052C8ACFC9008AB238 /* ProductCollectionViewCell.swift in Sources */,
 				43DCAFE52C8CAA5800652CE9 /* HomeViewController+Factory.swift in Sources */,
 				4315AD012C8ACE23008AB238 /* ProductCollectionViewDelegate.swift in Sources */,

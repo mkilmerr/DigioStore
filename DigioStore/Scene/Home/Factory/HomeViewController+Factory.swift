@@ -5,13 +5,17 @@
 //  Created by Kilmer on 07/09/24.
 //
 
-import Foundation
+import UIKit
 
 extension HomeViewController {
-    static func make() -> HomeViewController {
+    static func make(with coordinator: HomeCoordinator) -> HomeViewController {
         let storeService = StoreNetworkService()
         let viewModel = HomeViewModel(service: storeService)
-        let viewController = HomeViewController(viewModel: viewModel)
+        let viewController = HomeViewController(
+            viewModel: viewModel,
+            coordinator: coordinator
+        )
+
         return viewController
     }
 }

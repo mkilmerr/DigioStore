@@ -10,7 +10,7 @@ import UIKit
 class HomeCoordinator: Coordinator {
     var parentCoordinator: Coordinator?
     
-    var children: [Coordinator] = []
+    var childrenCoordinators: [Coordinator] = []
     
     var navigationController: UINavigationController
     
@@ -19,7 +19,28 @@ class HomeCoordinator: Coordinator {
     }
     
     func start() {
-        let viewController: HomeViewController = .make()
+        let viewController = HomeViewController.make(with: self)
         navigationController.pushViewController(viewController, animated: true)
+    }
+    
+    func addChildCoordinator(_ child: Coordinator) {
+        childrenCoordinators.append(child)
+    }
+    
+    func removeChildCoordinator(_ child: Coordinator) {
+        //childrenCoordinators = childrenCoordinators.filter { $0 !== child }
+    }
+}
+
+extension HomeCoordinator: SpotlightNavigation {
+    func goToSpotlightDetail(with spotlight: Spotlight) {
+        let spotlightDetailViewController = UIViewController()
+        let spotlightCoordinator = SpotlightCoordinator(navigationController: self.navigationController)
+        addChildCoordinator(spotlightCoordinator)
+        spotlightCoordinator.start()
+    }
+    
+    func goBack() {
+        
     }
 }

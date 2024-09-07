@@ -427,8 +427,8 @@
             filePath = "DigioStore/Scene/Home/View/HomeViewController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "95"
-            endingLineNumber = "95"
+            startingLineNumber = "97"
+            endingLineNumber = "97"
             landmarkName = "fetchStore()"
             landmarkType = "7">
          </BreakpointContent>
@@ -623,6 +623,54 @@
             endingLineNumber = "22"
             landmarkName = "bannerImageView"
             landmarkType = "24">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "5A793BFF-1750-48EB-9652-6265B5AFB0FA"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "DigioStore/Scene/Home/View/HomeViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "72"
+            endingLineNumber = "72"
+            landmarkName = "init(viewModel:coordinator:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "5A793BFF-1750-48EB-9652-6265B5AFB0FA - dcb2755d23b27a"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "DigioStore.HomeViewController.init(viewModel: DigioStore.HomeViewModelProtocol, coordinator: DigioStore.Coordinator) -&gt; DigioStore.HomeViewController"
+                  moduleName = "DigioStore"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/kilmer/Desktop/DigioStore/DigioStore/Scene/Home/View/HomeViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "72"
+                  endingLineNumber = "72"
+                  offsetFromSymbolStart = "894">
+               </Location>
+               <Location
+                  uuid = "5A793BFF-1750-48EB-9652-6265B5AFB0FA - dcb2755d23b27a"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "DigioStore.HomeViewController.init(viewModel: DigioStore.HomeViewModelProtocol, coordinator: DigioStore.Coordinator) -&gt; DigioStore.HomeViewController"
+                  moduleName = "DigioStore"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/kilmer/Desktop/DigioStore/DigioStore/Scene/Home/View/HomeViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "72"
+                  endingLineNumber = "72"
+                  offsetFromSymbolStart = "859">
+               </Location>
+            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>
