@@ -12,16 +12,49 @@ final class HomeViewController: UIViewController {
     private let spotlightCollectionView: SpotlightCollectionView = .make()
     private let cashBannerView: CashBannerView = .make()
     private let productsBannerView: ProductCollectionView = .make()
+
     private let contentScrollView = UIScrollView()
+
+    private let activityIndicator: UIActivityIndicatorView = {
+        let indicator = UIActivityIndicatorView()
+        indicator.translatesAutoresizingMaskIntoConstraints = false
+        indicator.hidesWhenStopped = true
+        return indicator
+    }()
 
     private lazy var contentStackView: UIStackView = {
         let stackView = UIStackView(
-            arrangedSubviews: [headerView, spotlightCollectionView, cashBannerView, productsBannerView]
+            arrangedSubviews: [
+                headerView, spotlightCollectionView, cashBannerView, productsBannerView]
         )
         stackView.spacing = 24
         stackView.axis = .vertical
+        stackView.isHidden = true
         stackView.translatesAutoresizingMaskIntoConstraints = false
         return stackView
+    }()
+    
+    private lazy var alertController: UIAlertController = {
+        let alertController = UIAlertController(
+            title: "Ops....",
+            message: "Tente Novamente",
+            preferredStyle: .alert
+        )
+
+        let okAction = UIAlertAction(title: "OK", style: .default) { [weak self] _ in
+            self?.fetchStore()
+        }
+        
+        let cancelAction = UIAlertAction(
+            title: "Cancelar",
+            style: .cancel,
+            handler: nil
+        )
+        
+        alertController.addAction(okAction)
+        alertController.addAction(cancelAction)
+
+        return alertController
     }()
 
     let viewModel: HomeViewModelProtocol
@@ -39,20 +72,64 @@ final class HomeViewController: UIViewController {
         super.viewDidLoad()
         setupView()
         setupConstraints()
+        fetchStore()
+    }
+}
 
+// MARK: - Fetch Store
+extension HomeViewController {
+    private func fetchStore() {
         viewModel.getStore { [weak self] state in
             guard let self else { return }
             switch state {
-            case .loading: break
+            case .loading:
+                setupLoading()
             case .success(let store):
-                spotlightCollectionView.loadBanners(with: store.spotlight)
-                cashBannerView.loadCashBanner(with: store.cash)
-                productsBannerView.loadProductBanner(with: store.products)
-//                productsBannerView.
-            case .error(let error):
-                spotlightCollectionView.loadBanners(with: [])
+                setupSuccessViews(with: store)
+            case .error:
+                present(alertController, animated: true, completion: nil)
             }
         }
+    }
+}
+
+// MARK: - View State Configurations
+extension HomeViewController {
+    private func setupSuccessViews(with store: Store) {
+        contentStackView.isHidden = false
+        stopLoading()
+
+        spotlightCollectionView.loadBanners(
+            with: store.spotlight
+        )
+
+        cashBannerView.loadCashBanner(
+            with: store.cash
+        )
+
+        productsBannerView.loadProductBanner(
+            with: store.products
+        )
+    }
+
+    private func setupLoading() {
+        view.addSubview(activityIndicator)
+        activityIndicator.startAnimating()
+        contentStackView.isHidden = true
+      
+        NSLayoutConstraint.activate([
+            activityIndicator.centerXAnchor.constraint(
+                equalTo: view.centerXAnchor
+            ),
+            activityIndicator.centerYAnchor.constraint(
+                equalTo: view.centerYAnchor
+            )
+        ])
+    }
+    
+    private func stopLoading() {
+        activityIndicator.stopAnimating()
+        activityIndicator.removeFromSuperview()
     }
 }
 
