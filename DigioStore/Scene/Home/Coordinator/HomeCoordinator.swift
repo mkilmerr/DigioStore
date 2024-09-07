@@ -7,7 +7,9 @@
 
 import UIKit
 
-class HomeCoordinator: Coordinator {
+protocol HomeCoordinatorProtocol: Coordinator, SpotlightNavigation {}
+
+class HomeCoordinator: HomeCoordinatorProtocol {
     var parentCoordinator: Coordinator?
     
     var childrenCoordinators: [Coordinator] = []
@@ -30,9 +32,7 @@ class HomeCoordinator: Coordinator {
     func removeChildCoordinator(_ child: Coordinator) {
         //childrenCoordinators = childrenCoordinators.filter { $0 !== child }
     }
-}
-
-extension HomeCoordinator: SpotlightNavigation {
+    
     func goToSpotlightDetail(with spotlight: Spotlight) {
         let spotlightDetailViewController = UIViewController()
         let spotlightCoordinator = SpotlightCoordinator(navigationController: self.navigationController)
@@ -40,7 +40,7 @@ extension HomeCoordinator: SpotlightNavigation {
         spotlightCoordinator.start()
     }
     
-    func goBack() {
-        
+    func goBackSpotlight() {
+        navigationController.popViewController(animated: true)
     }
 }

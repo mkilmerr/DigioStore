@@ -10,7 +10,7 @@ import UIKit
 
 protocol SpotlightNavigation {
     func goToSpotlightDetail(with spotlight: Spotlight)
-    func goBack()
+    func goBackSpotlight()
 }
 
 final class SpotlightCoordinator: Coordinator {
