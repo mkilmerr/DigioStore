@@ -11,7 +11,8 @@ final class CashBannerView: UIView {
     
     private let title: UILabel = {
         let label = UILabel()
-        label.font = .boldSystemFont(ofSize: 15)
+        label.textColor = .black
+        label.font = .boldSystemFont(ofSize: 20)
         label.textColor = .black
         return label
     }()
@@ -50,8 +51,8 @@ final class CashBannerView: UIView {
         
         NSLayoutConstraint.activate([
             stackView.topAnchor.constraint(equalTo: topAnchor),
-            stackView.leadingAnchor.constraint(equalTo: leadingAnchor, constant: 4),
-            trailingAnchor.constraint(equalTo: stackView.trailingAnchor, constant: 4),
+            stackView.leadingAnchor.constraint(equalTo: leadingAnchor, constant: 8),
+            trailingAnchor.constraint(equalTo: stackView.trailingAnchor, constant: 8),
             stackView.bottomAnchor.constraint(equalTo: bottomAnchor),
             bannerImageView.heightAnchor.constraint(equalTo: heightAnchor, multiplier: 0.5)
         ])

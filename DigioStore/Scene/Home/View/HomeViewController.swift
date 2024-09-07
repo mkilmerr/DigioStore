@@ -11,9 +11,9 @@ final class HomeViewController: UIViewController {
     private let headerView = HomeHeaderView()
     private let spotlightCollectionView: SpotlightCollectionView = .make()
     private let cashBannerView: CashBannerView = .make()
-    private let productsBannerView: ProductCollectionView = .make()
-
+    private let productsCollectionView: ProductCollectionView = .make()
     private let contentScrollView = UIScrollView()
+    private let productHeaderView = ProductHeaderView()
 
     private let activityIndicator: UIActivityIndicatorView = {
         let indicator = UIActivityIndicatorView()
@@ -25,9 +25,15 @@ final class HomeViewController: UIViewController {
     private lazy var contentStackView: UIStackView = {
         let stackView = UIStackView(
             arrangedSubviews: [
-                headerView, spotlightCollectionView, cashBannerView, productsBannerView]
+                headerView,
+                spotlightCollectionView,
+                cashBannerView,
+                productHeaderView,
+                productsCollectionView
+            ]
         )
-        stackView.spacing = 24
+        stackView.spacing = 4
+        stackView.setCustomSpacing(24, after: cashBannerView)
         stackView.axis = .vertical
         stackView.isHidden = true
         stackView.translatesAutoresizingMaskIntoConstraints = false
@@ -107,7 +113,7 @@ extension HomeViewController {
             with: store.cash
         )
 
-        productsBannerView.loadProductBanner(
+        productsCollectionView.loadProductBanner(
             with: store.products
         )
     }
@@ -189,16 +195,13 @@ extension HomeViewController {
     private func setupBannersConstraints() {
         NSLayoutConstraint.activate([
             spotlightCollectionView.heightAnchor.constraint(
-                equalTo: contentScrollView.heightAnchor,
-                multiplier: 0.3
+               equalToConstant: 200
             ),
             cashBannerView.heightAnchor.constraint(
-                equalTo: contentScrollView.heightAnchor,
-                multiplier: 0.3
+                equalToConstant: 200
             ),
-            productsBannerView.heightAnchor.constraint(
-                equalTo: contentScrollView.heightAnchor,
-                multiplier: 0.3
+            productsCollectionView.heightAnchor.constraint(
+               equalToConstant: 200
             )
         ])
     }

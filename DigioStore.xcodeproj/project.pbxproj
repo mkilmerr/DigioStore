@@ -47,8 +47,10 @@
 		4335BEA52C8AA06A00A12A40 /* SpotlightCollectionViewDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4335BEA42C8AA06A00A12A40 /* SpotlightCollectionViewDataSource.swift */; };
 		4347C7AE2C8BB5E2007F682E /* StoreRemoteImageStub.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4347C7AD2C8BB5E2007F682E /* StoreRemoteImageStub.swift */; };
 		4347C7B22C8BB7E5007F682E /* CashViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4347C7B12C8BB7E5007F682E /* CashViewModelTests.swift */; };
+		4347C7B42C8BD8DF007F682E /* ProductHeaderCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4347C7B32C8BD8DF007F682E /* ProductHeaderCollectionView.swift */; };
 		4370042B2C8B8C24007B8D44 /* UIImage+Remote.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4370042A2C8B8C24007B8D44 /* UIImage+Remote.swift */; };
 		4370042F2C8B97EE007B8D44 /* SpotlightViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4370042E2C8B97EE007B8D44 /* SpotlightViewModelTests.swift */; };
+		43DCAFDD2C8CA59F00652CE9 /* ProductHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43DCAFDC2C8CA59F00652CE9 /* ProductHeaderView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -105,8 +107,10 @@
 		4335BEA42C8AA06A00A12A40 /* SpotlightCollectionViewDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpotlightCollectionViewDataSource.swift; sourceTree = "<group>"; };
 		4347C7AD2C8BB5E2007F682E /* StoreRemoteImageStub.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoreRemoteImageStub.swift; sourceTree = "<group>"; };
 		4347C7B12C8BB7E5007F682E /* CashViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CashViewModelTests.swift; sourceTree = "<group>"; };
+		4347C7B32C8BD8DF007F682E /* ProductHeaderCollectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductHeaderCollectionView.swift; sourceTree = "<group>"; };
 		4370042A2C8B8C24007B8D44 /* UIImage+Remote.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage+Remote.swift"; sourceTree = "<group>"; };
 		4370042E2C8B97EE007B8D44 /* SpotlightViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpotlightViewModelTests.swift; sourceTree = "<group>"; };
+		43DCAFDC2C8CA59F00652CE9 /* ProductHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductHeaderView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -195,6 +199,8 @@
 			children = (
 				4315ACF92C8ACAEB008AB238 /* ProductCollectionView.swift */,
 				4315AD042C8ACFC9008AB238 /* ProductCollectionViewCell.swift */,
+				4347C7B32C8BD8DF007F682E /* ProductHeaderCollectionView.swift */,
+				43DCAFDC2C8CA59F00652CE9 /* ProductHeaderView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -606,6 +612,7 @@
 				432872E42C8A006C00E73EF9 /* StoreEndpoint.swift in Sources */,
 				4328730F2C8A386500E73EF9 /* SpotlightCollectionView.swift in Sources */,
 				432872D52C89FB2100E73EF9 /* Spotlight.swift in Sources */,
+				4347C7B42C8BD8DF007F682E /* ProductHeaderCollectionView.swift in Sources */,
 				4334A36F2C89EB0A005FE4E7 /* AppDelegate.swift in Sources */,
 				4315AD032C8ACEED008AB238 /* ProductCollectionViewDataSource.swift in Sources */,
 				4335BEA52C8AA06A00A12A40 /* SpotlightCollectionViewDataSource.swift in Sources */,
@@ -616,6 +623,7 @@
 				432872D72C89FB8600E73EF9 /* Product.swift in Sources */,
 				4315ACFD2C8ACC19008AB238 /* ProductCollectionView+Factory.swift in Sources */,
 				432872E62C8A00AA00E73EF9 /* StoreHTTPMethod.swift in Sources */,
+				43DCAFDD2C8CA59F00652CE9 /* ProductHeaderView.swift in Sources */,
 				4370042B2C8B8C24007B8D44 /* UIImage+Remote.swift in Sources */,
 				4315ACE72C8AA568008AB238 /* CashViewModel.swift in Sources */,
 				4315ACF12C8AC319008AB238 /* UIView+Shadow.swift in Sources */,
