@@ -479,6 +479,38 @@
             endingLineNumber = "26"
             landmarkName = "init(frame:)"
             landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "3A2C8507-3362-42D6-A7BE-19E7B85CE076 - 6d47b29fe9743cb7"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "DigioStore.ProductHeaderCollectionView.layoutSubviews() -&gt; ()"
+                  moduleName = "DigioStore"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/kilmer/Desktop/DigioStore/DigioStore/Scene/Product/View/ProductHeaderCollectionView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "26"
+                  endingLineNumber = "26"
+                  offsetFromSymbolStart = "73">
+               </Location>
+               <Location
+                  uuid = "3A2C8507-3362-42D6-A7BE-19E7B85CE076 - cb39f8f18d1c26a5"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "DigioStore.ProductHeaderCollectionView.init(frame: __C.CGRect) -&gt; DigioStore.ProductHeaderCollectionView"
+                  moduleName = "DigioStore"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/kilmer/Desktop/DigioStore/DigioStore/Scene/Product/View/ProductHeaderCollectionView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "26"
+                  endingLineNumber = "26"
+                  offsetFromSymbolStart = "308">
+               </Location>
+            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy

@@ -18,10 +18,23 @@ default_platform(:ios)
 platform :ios do
   desc "Configura o SwiftLint...."
   lane :install_swiftlint do
-    sh "if ! which swiftlint > /dev/null; then
-          brew install swiftlint
-        else
-          echo 'SwiftLint já está instalado'
-        fi"
+    sh <<-SHELL
+      if ! which swiftlint > /dev/null; then
+        brew install swiftlint
+      else
+        echo 'SwiftLint já está instalado'
+      fi
+    SHELL
+  end
+
+  desc "Testes Unitários...."
+  lane :unit_tests do
+  scan(
+      scheme: "DigioStore", 
+      device: "iPhone 8",
+      clean: true,
+      test_without_building: false,
+      code_coverage: true
+    )
   end
 end
