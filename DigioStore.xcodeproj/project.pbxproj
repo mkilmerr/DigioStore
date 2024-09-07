@@ -51,6 +51,9 @@
 		4370042B2C8B8C24007B8D44 /* UIImage+Remote.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4370042A2C8B8C24007B8D44 /* UIImage+Remote.swift */; };
 		4370042F2C8B97EE007B8D44 /* SpotlightViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4370042E2C8B97EE007B8D44 /* SpotlightViewModelTests.swift */; };
 		43DCAFDD2C8CA59F00652CE9 /* ProductHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43DCAFDC2C8CA59F00652CE9 /* ProductHeaderView.swift */; };
+		43DCAFDF2C8CA76000652CE9 /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43DCAFDE2C8CA76000652CE9 /* Coordinator.swift */; };
+		43DCAFE22C8CA7C700652CE9 /* HomeCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43DCAFE12C8CA7C700652CE9 /* HomeCoordinator.swift */; };
+		43DCAFE52C8CAA5800652CE9 /* HomeViewController+Factory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43DCAFE42C8CAA5800652CE9 /* HomeViewController+Factory.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -111,6 +114,9 @@
 		4370042A2C8B8C24007B8D44 /* UIImage+Remote.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage+Remote.swift"; sourceTree = "<group>"; };
 		4370042E2C8B97EE007B8D44 /* SpotlightViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpotlightViewModelTests.swift; sourceTree = "<group>"; };
 		43DCAFDC2C8CA59F00652CE9 /* ProductHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductHeaderView.swift; sourceTree = "<group>"; };
+		43DCAFDE2C8CA76000652CE9 /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
+		43DCAFE12C8CA7C700652CE9 /* HomeCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeCoordinator.swift; sourceTree = "<group>"; };
+		43DCAFE42C8CAA5800652CE9 /* HomeViewController+Factory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "HomeViewController+Factory.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -178,6 +184,7 @@
 			children = (
 				4315ACF02C8AC319008AB238 /* UIView+Shadow.swift */,
 				4370042A2C8B8C24007B8D44 /* UIImage+Remote.swift */,
+				43DCAFDE2C8CA76000652CE9 /* Coordinator.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -264,6 +271,8 @@
 			children = (
 				432873132C8A43ED00E73EF9 /* View */,
 				432872E92C8A151C00E73EF9 /* ViewModel */,
+				43DCAFE02C8CA7B000652CE9 /* Coordinator */,
+				43DCAFE32C8CAA2C00652CE9 /* Factory */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -464,6 +473,22 @@
 			path = ViewModel;
 			sourceTree = "<group>";
 		};
+		43DCAFE02C8CA7B000652CE9 /* Coordinator */ = {
+			isa = PBXGroup;
+			children = (
+				43DCAFE12C8CA7C700652CE9 /* HomeCoordinator.swift */,
+			);
+			path = Coordinator;
+			sourceTree = "<group>";
+		};
+		43DCAFE32C8CAA2C00652CE9 /* Factory */ = {
+			isa = PBXGroup;
+			children = (
+				43DCAFE42C8CAA5800652CE9 /* HomeViewController+Factory.swift */,
+			);
+			path = Factory;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -615,7 +640,9 @@
 				4347C7B42C8BD8DF007F682E /* ProductHeaderCollectionView.swift in Sources */,
 				4334A36F2C89EB0A005FE4E7 /* AppDelegate.swift in Sources */,
 				4315AD032C8ACEED008AB238 /* ProductCollectionViewDataSource.swift in Sources */,
+				43DCAFDF2C8CA76000652CE9 /* Coordinator.swift in Sources */,
 				4335BEA52C8AA06A00A12A40 /* SpotlightCollectionViewDataSource.swift in Sources */,
+				43DCAFE22C8CA7C700652CE9 /* HomeCoordinator.swift in Sources */,
 				4328731F2C8A550400E73EF9 /* SpotlightCollectionView+Factory.swift in Sources */,
 				4315ACEC2C8AAAD9008AB238 /* CashBannerView+Factory.swift in Sources */,
 				4315ACE92C8AAA35008AB238 /* CashBannerView.swift in Sources */,
@@ -631,6 +658,7 @@
 				432873112C8A432500E73EF9 /* SpotlightCollectionViewCell.swift in Sources */,
 				4328731C2C8A4A5D00E73EF9 /* SpotlightViewModel.swift in Sources */,
 				4315AD052C8ACFC9008AB238 /* ProductCollectionViewCell.swift in Sources */,
+				43DCAFE52C8CAA5800652CE9 /* HomeViewController+Factory.swift in Sources */,
 				4315AD012C8ACE23008AB238 /* ProductCollectionViewDelegate.swift in Sources */,
 				432872DB2C89FBE300E73EF9 /* Store.swift in Sources */,
 				4315ACE22C8AA3AB008AB238 /* SpotlightCollectionViewDelegate.swift in Sources */,
