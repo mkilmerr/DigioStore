@@ -7,7 +7,12 @@
 
 import UIKit
 
+protocol ProductCollectionActionDelegate: AnyObject {
+    func goToDetail(with product: ProductBanner)
+}
+
 final class ProductCollectionView: UICollectionView {
+    weak var delegateView: ProductCollectionActionDelegate?
     var viewModel: ProductViewModelProtocol
     let collectionDataSource: ProductCollectionViewDataSource = .init(productBanners: [])
     let collectionDelegate = ProductCollectionViewDelegate()
@@ -30,6 +35,10 @@ final class ProductCollectionView: UICollectionView {
             ProductCollectionViewCell.self,
             forCellWithReuseIdentifier: ProductCollectionViewCell.reuseIdentifier
         )
+        
+        self.collectionDelegate.onTapItem = { [weak self] banner in
+            self?.delegateView?.goToDetail(with: banner)
+        }
     }
     
     required init?(coder: NSCoder) {
@@ -42,6 +51,7 @@ final class ProductCollectionView: UICollectionView {
         viewModel.onBannersLoaded = { [weak self] in
             guard let self else { return }
             self.collectionDataSource.productBanners = self.viewModel.productBanners
+            self.collectionDelegate.productBanners = self.viewModel.productBanners
             self.reloadData()
         }
     }

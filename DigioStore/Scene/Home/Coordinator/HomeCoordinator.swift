@@ -11,7 +11,11 @@ protocol SpotlightNavigation {
     func goToSpotlightDetail(with spotlight: SpotlightBanner)
 }
 
-protocol HomeCoordinatorProtocol: Coordinator, SpotlightNavigation {}
+protocol ProductNavigation {
+    func goToProductDetail(with product: ProductBanner)
+}
+
+protocol HomeCoordinatorProtocol: Coordinator, SpotlightNavigation, ProductNavigation {}
 
 class HomeCoordinator: HomeCoordinatorProtocol {
     var navigationController: UINavigationController?
@@ -32,6 +36,17 @@ class HomeCoordinator: HomeCoordinatorProtocol {
     
         navigationController?.pushViewController(
             spotlightDetailViewController,
+            animated: true
+        )
+    }
+    
+    func goToProductDetail(with product: ProductBanner) {
+        let productDetailViewController = ProductDetailViewController(
+            product: product
+        )
+        
+        navigationController?.pushViewController(
+            productDetailViewController,
             animated: true
         )
     }

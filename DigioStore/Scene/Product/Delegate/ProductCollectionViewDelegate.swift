@@ -8,6 +8,10 @@
 import UIKit
 
 final class ProductCollectionViewDelegate: NSObject, UICollectionViewDelegate, UICollectionViewDelegateFlowLayout {
+    var productBanners: [ProductBanner] = []
+
+    var onTapItem: ((ProductBanner) -> Void)?
+
     func collectionView(_ collectionView: UICollectionView,
                         layout collectionViewLayout: UICollectionViewLayout,
                         sizeForItemAt indexPath: IndexPath) -> CGSize {
@@ -15,6 +19,6 @@ final class ProductCollectionViewDelegate: NSObject, UICollectionViewDelegate, U
     }
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-
+        onTapItem?(productBanners[indexPath.row])
     }
 }

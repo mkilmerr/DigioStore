@@ -1,5 +1,5 @@
 //
-//  SpotlightDetailViewController.swift
+//  ProductDetailViewController.swift
 //  DigioStore
 //
 //  Created by Kilmer on 07/09/24.
@@ -7,10 +7,11 @@
 
 import UIKit
 
-final class SpotlightDetailViewController: UIViewController {
+final class ProductDetailViewController: UIViewController {
     private let imageView: UIImageView = {
         let imageView = UIImageView()
         imageView.layer.cornerRadius = 24
+        imageView.contentMode = .scaleAspectFit
         imageView.layer.masksToBounds = true
         return imageView
     }()
@@ -18,7 +19,7 @@ final class SpotlightDetailViewController: UIViewController {
     private let nameLabel: UILabel = {
        let label = UILabel()
         label.textColor = .black
-        label.font = .boldSystemFont(ofSize: 25)
+        label.font = .boldSystemFont(ofSize: 30)
         return label
     }()
     
@@ -33,8 +34,8 @@ final class SpotlightDetailViewController: UIViewController {
     
     private lazy var contentStackView: UIStackView = {
         let stackView = UIStackView(arrangedSubviews: [
-            imageView,
             nameLabel,
+            imageView,
             descriptionLabel
         ])
         stackView.axis = .vertical
@@ -43,12 +44,12 @@ final class SpotlightDetailViewController: UIViewController {
         return stackView
     }()
     
-    let sportlight: SpotlightBanner
+    let product: ProductBanner
 
-    init(sportlight: SpotlightBanner) {
-        self.sportlight = sportlight
+    init(product: ProductBanner) {
+        self.product = product
         super.init(nibName: nil, bundle: nil)
-        self.setupView(with: sportlight)
+        self.setupView(with: product)
     }
     
     required init?(coder: NSCoder) {
@@ -71,22 +72,21 @@ final class SpotlightDetailViewController: UIViewController {
             ),
             contentStackView.leadingAnchor.constraint(
                 equalTo: view.leadingAnchor,
-                constant: 8
+                constant: 20
             ),
             view.trailingAnchor.constraint(
                 equalTo: contentStackView.trailingAnchor,
-                constant: 8
+                constant: 20
             ),
             imageView.heightAnchor.constraint(
-                equalTo: view.heightAnchor,
-                multiplier: 0.2
+               equalToConstant: 100
             )
         ])
     }
     
-    private func setupView(with spolight: SpotlightBanner) {
-        nameLabel.text = spolight.name
-        descriptionLabel.text = spolight.description
-        imageView.image = spolight.image
+    private func setupView(with product: ProductBanner) {
+        nameLabel.text = product.name
+        descriptionLabel.text = product.description
+        imageView.image = product.image
     }
 }

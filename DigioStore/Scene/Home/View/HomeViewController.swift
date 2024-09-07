@@ -82,6 +82,7 @@ final class HomeViewController: UIViewController {
         setupConstraints()
         fetchStore()
         spotlightCollectionView.delegateView = self
+        productsCollectionView.delegateView = self
     }
 }
 
@@ -214,5 +215,12 @@ extension HomeViewController {
 extension HomeViewController: SpotlightCollectionActionDelegate {
     func goToDetail(with spotlight: SpotlightBanner) {
         coordinator.goToSpotlightDetail(with: spotlight)
+    }
+}
+
+// MARK: - ProductCollectionActionDelegate
+extension HomeViewController: ProductCollectionActionDelegate {
+    func goToDetail(with product: ProductBanner) {
+        coordinator.goToProductDetail(with: product)
     }
 }
