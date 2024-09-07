@@ -50,3 +50,20 @@ fastlane install_swiftlint
 fastlane unit_tests
 ```
 
+### 🔸 Screenshots 🔸
+
+<img src="https://github.com/user-attachments/assets/b2f53629-1306-4de1-9607-0753e676d7aa" width="300" height="600">
+
+
+<img src="https://github.com/user-attachments/assets/76b59352-3b53-47c9-8151-b7489dc7959a" width="300" height="600">
+
+
+<img src="https://github.com/user-attachments/assets/f15d510b-5ad8-4118-b5dd-d42059bc2012" width="300" height="600">
+
+
+
+
+
+
+
+
