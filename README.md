@@ -7,7 +7,7 @@
 * XCTestCase para testes unitários
 * Fastlane 
 -----------
-## Configuraçãoes do Projeto
+## Configurações do Projeto
 
 ### 🔸 Xcode 🔸
 
