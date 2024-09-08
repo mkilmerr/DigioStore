@@ -50,8 +50,4 @@ class HomeCoordinator: HomeCoordinatorProtocol {
             animated: true
         )
     }
-
-    func goBackSpotlight() {
-        navigationController?.popViewController(animated: true)
-    }
 }
