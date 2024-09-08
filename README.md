@@ -3,7 +3,7 @@
 ### Tecnologias
 * Swift ( 4.2 )
 * UIKit ( View Code )
-* Design Pattern - UI ( MVVM )
+*  UI Design Pattern - ( MVVM )
 * XCTestCase para testes unitários
 * Fastlane 
 -----------
